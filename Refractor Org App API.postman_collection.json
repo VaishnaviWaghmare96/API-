@@ -1,0 +1,2696 @@
+{
+	"info": {
+		"_postman_id": "28d1f6df-7513-4672-ab6d-a2549cc68224",
+		"name": "Refractor Org App API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36022570"
+	},
+	"item": [
+		{
+			"name": "NewAPI",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNzY0NDg1ZGMtM2RmOS00NzhjLTlkMTItNWYzMzY1MTI5MGU0Iiwid29ya3NwYWNlSWQiOiJiMWE5N2U0ZC1mMzRmLTQ4ZDUtYTQ2Ni02MWUwZjdjOTNmOTEiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTczMjg2NTE4MiwiZXhwIjoxNzM1Mjg0MzgyfQ.ipFTCOanbQVlowLOQlrHfBz6N0VqfvslUOYyqxYTxMs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiOTY1ZjNjYmItYTJlMi00MDI1LWJmOTMtYzJlZjc3OWIzNjkxIiwid29ya3NwYWNlSWQiOiIwOTY1MDYzNS1jN2Q2LTRhM2MtYWY5Yi00MTg3NDQ5ZmIxNmUiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyNDI0NzcyNywiZXhwIjoxNzI2NjY2OTI3fQ.nKzHCzfiLic_heTnFk8IvByGBdXOMsHCkWe9uDYuHHw"
+					},
+					{
+						"key": "origin",
+						"value": "https://app-qa.zono.digital"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://app-qa.zono.digital/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not)A;Brand\";v=\"99\", \"Google Chrome\";v=\"127\", \"Chromium\";v=\"127\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+					}
+				],
+				"url": {
+					"raw": "https://api-qa.zono.digital/hub/orgs/api/customers/b1a97e4d-f34f-48d5-a466-61e0f7c93f91?includeWorkspaceMembers=1&includeTeamCustomersMapping=true&pageNo=1&pageSize=20&sellerWorkspaceId=b1a97e4d-f34f-48d5-a466-61e0f7c93f91",
+					"protocol": "https",
+					"host": [
+						"api-qa",
+						"zono",
+						"digital"
+					],
+					"path": [
+						"hub",
+						"orgs",
+						"api",
+						"customers",
+						"b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+					],
+					"query": [
+						{
+							"key": "includeWorkspaceMembers",
+							"value": "1"
+						},
+						{
+							"key": "includeTeamCustomersMapping",
+							"value": "true"
+						},
+						{
+							"key": "pageNo",
+							"value": "1"
+						},
+						{
+							"key": "pageSize",
+							"value": "20"
+						},
+						{
+							"key": "sellerWorkspaceId",
+							"value": "b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+						},
+						{
+							"key": "divisionIds",
+							"value": "868c80c1-75e7-4c95-ae77-2d8eb13e1aca",
+							"disabled": true
+						},
+						{
+							"key": "isActive",
+							"value": "0",
+							"disabled": true
+						},
+						{
+							"key": "searchKey",
+							"value": "848001",
+							"disabled": true
+						},
+						{
+							"key": "onboardingStatus",
+							"value": "P",
+							"disabled": true
+						},
+						{
+							"key": "divisionIds[]",
+							"value": "681b4692-76dd-48c5-a14b-dc38030d74d6",
+							"disabled": true
+						},
+						{
+							"key": "division",
+							"value": "PPM01",
+							"disabled": true
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://api-qa.zono.digital/hub/orgs/api/customers/09650635-c7d6-4a3c-af9b-4187449fb16e?includeWorkspaceMembers=1&includeTeamCustomersMapping=true&pageNo=1&pageSize=20&sellerWorkspaceId=09650635-c7d6-4a3c-af9b-4187449fb16e' \\\r\n--header 'accept: */*' \\\r\n--header 'accept-language: en-US,en;q=0.9' \\\r\n--header 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiOTY1ZjNjYmItYTJlMi00MDI1LWJmOTMtYzJlZjc3OWIzNjkxIiwid29ya3NwYWNlSWQiOiIwOTY1MDYzNS1jN2Q2LTRhM2MtYWY5Yi00MTg3NDQ5ZmIxNmUiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyNDI0NzcyNywiZXhwIjoxNzI2NjY2OTI3fQ.nKzHCzfiLic_heTnFk8IvByGBdXOMsHCkWe9uDYuHHw' \\\r\n--header 'origin: https://app-qa.zono.digital' \\\r\n--header 'priority: u=1, i' \\\r\n--header 'referer: https://app-qa.zono.digital/' \\\r\n--header 'sec-ch-ua: \"Not)A;Brand\";v=\"99\", \"Google Chrome\";v=\"127\", \"Chromium\";v=\"127\"' \\\r\n--header 'sec-ch-ua-mobile: ?0' \\\r\n--header 'sec-ch-ua-platform: \"Linux\"' \\\r\n--header 'sec-fetch-dest: empty' \\\r\n--header 'sec-fetch-mode: cors' \\\r\n--header 'sec-fetch-site: same-site' \\\r\n--header 'user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36'"
+			},
+			"response": []
+		},
+		{
+			"name": "Get list of head division API",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNzY0NDg1ZGMtM2RmOS00NzhjLTlkMTItNWYzMzY1MTI5MGU0Iiwid29ya3NwYWNlSWQiOiJiMWE5N2U0ZC1mMzRmLTQ4ZDUtYTQ2Ni02MWUwZjdjOTNmOTEiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyNjg0MzkwNSwiZXhwIjoxNzI5MjYzMTA1fQ.UCHW_-oLTA7BbGWUYQu1dLUTvGYFViCZQVd2VW_CQuM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-GB,en;q=0.9"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiOTY1ZjNjYmItYTJlMi00MDI1LWJmOTMtYzJlZjc3OWIzNjkxIiwid29ya3NwYWNlSWQiOiIwOTY1MDYzNS1jN2Q2LTRhM2MtYWY5Yi00MTg3NDQ5ZmIxNmUiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyNjgxNDAwOSwiZXhwIjoxNzI5MjMzMjA5fQ.JxAW7XXKFXUHiw4RJgRO8XKo7NQTPiLBUPMhHv7Qpbk"
+					},
+					{
+						"key": "dnt",
+						"value": "1"
+					},
+					{
+						"key": "origin",
+						"value": "https://app-qa.zono.digital"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://app-qa.zono.digital/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"\"Not/A)Brand\"\";v=\"\"8\"\", \"\"Chromium\"\";v=\"\"126\"\", \"\"Google Chrome\"\";v=\"\"126\"\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"\"Windows\"\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+					}
+				],
+				"url": {
+					"raw": "https://api-qa.zono.digital/hub/orgs/api/headDivision/b1a97e4d-f34f-48d5-a466-61e0f7c93f91?sellerWorkspaceId=b1a97e4d-f34f-48d5-a466-61e0f7c93f91",
+					"protocol": "https",
+					"host": [
+						"api-qa",
+						"zono",
+						"digital"
+					],
+					"path": [
+						"hub",
+						"orgs",
+						"api",
+						"headDivision",
+						"b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+					],
+					"query": [
+						{
+							"key": "sellerWorkspaceId",
+							"value": "b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://api-qa.zono.digital/hub/orgs/api/headDivision/09650635-c7d6-4a3c-af9b-4187449fb16e?sellerWorkspaceId=09650635-c7d6-4a3c-af9b-4187449fb16e' \\\r\n--header 'accept: */*' \\\r\n--header 'accept-language: en-GB,en;q=0.9' \\\r\n--header 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiOTY1ZjNjYmItYTJlMi00MDI1LWJmOTMtYzJlZjc3OWIzNjkxIiwid29ya3NwYWNlSWQiOiIwOTY1MDYzNS1jN2Q2LTRhM2MtYWY5Yi00MTg3NDQ5ZmIxNmUiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyNjgxNDAwOSwiZXhwIjoxNzI5MjMzMjA5fQ.JxAW7XXKFXUHiw4RJgRO8XKo7NQTPiLBUPMhHv7Qpbk' \\\r\n--header 'dnt: 1' \\\r\n--header 'origin: https://app-qa.zono.digital' \\\r\n--header 'priority: u=1, i' \\\r\n--header 'referer: https://app-qa.zono.digital/' \\\r\n--header 'sec-ch-ua: \"\"Not/A)Brand\"\";v=\"\"8\"\", \"\"Chromium\"\";v=\"\"126\"\", \"\"Google Chrome\"\";v=\"\"126\"\"' \\\r\n--header 'sec-ch-ua-mobile: ?0' \\\r\n--header 'sec-ch-ua-platform: \"\"Windows\"\"' \\\r\n--header 'sec-fetch-dest: empty' \\\r\n--header 'sec-fetch-mode: cors' \\\r\n--header 'sec-fetch-site: same-site' \\\r\n--header 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'"
+			},
+			"response": []
+		},
+		{
+			"name": "Get CFA Fulfillment Location API",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNzY0NDg1ZGMtM2RmOS00NzhjLTlkMTItNWYzMzY1MTI5MGU0Iiwid29ya3NwYWNlSWQiOiJiMWE5N2U0ZC1mMzRmLTQ4ZDUtYTQ2Ni02MWUwZjdjOTNmOTEiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyNjg0MzkwNSwiZXhwIjoxNzI5MjYzMTA1fQ.UCHW_-oLTA7BbGWUYQu1dLUTvGYFViCZQVd2VW_CQuM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not)A;Brand\";v=\"99\", \"Google Chrome\";v=\"127\", \"Chromium\";v=\"127\""
+					},
+					{
+						"key": "Referer",
+						"value": "https://app-qa.zono.digital/"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiOTY1ZjNjYmItYTJlMi00MDI1LWJmOTMtYzJlZjc3OWIzNjkxIiwid29ya3NwYWNlSWQiOiIwOTY1MDYzNS1jN2Q2LTRhM2MtYWY5Yi00MTg3NDQ5ZmIxNmUiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyNjgxNDAwOSwiZXhwIjoxNzI5MjMzMjA5fQ.JxAW7XXKFXUHiw4RJgRO8XKo7NQTPiLBUPMhHv7Qpbk"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://api-qa.zono.digital/hub/orgs/api/cfa/b1a97e4d-f34f-48d5-a466-61e0f7c93f91?pageNo=1&pageSize=20&sortDirection=ASC&sellerWorkspaceId=b1a97e4d-f34f-48d5-a466-61e0f7c93f91&=",
+					"protocol": "https",
+					"host": [
+						"api-qa",
+						"zono",
+						"digital"
+					],
+					"path": [
+						"hub",
+						"orgs",
+						"api",
+						"cfa",
+						"b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+					],
+					"query": [
+						{
+							"key": "pageNo",
+							"value": "1"
+						},
+						{
+							"key": "pageSize",
+							"value": "20"
+						},
+						{
+							"key": "sortDirection",
+							"value": "ASC"
+						},
+						{
+							"key": "sellerWorkspaceId",
+							"value": "b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+						},
+						{
+							"key": "searchKey",
+							"value": "CFAU0078",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://api-qa.zono.digital/hub/orgs/api/cfa/09650635-c7d6-4a3c-af9b-4187449fb16e?pageNo=1&pageSize=20&sortDirection=ASC&sellerWorkspaceId=09650635-c7d6-4a3c-af9b-4187449fb16e' \\\r\n--header 'sec-ch-ua: \"Not)A;Brand\";v=\"99\", \"Google Chrome\";v=\"127\", \"Chromium\";v=\"127\"' \\\r\n--header 'Referer: https://app-qa.zono.digital/' \\\r\n--header 'sec-ch-ua-mobile: ?0' \\\r\n--header 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiOTY1ZjNjYmItYTJlMi00MDI1LWJmOTMtYzJlZjc3OWIzNjkxIiwid29ya3NwYWNlSWQiOiIwOTY1MDYzNS1jN2Q2LTRhM2MtYWY5Yi00MTg3NDQ5ZmIxNmUiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyNjgxNDAwOSwiZXhwIjoxNzI5MjMzMjA5fQ.JxAW7XXKFXUHiw4RJgRO8XKo7NQTPiLBUPMhHv7Qpbk' \\\r\n--header 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36' \\\r\n--header 'sec-ch-ua-platform: \"Linux\"'"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Customer API",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNzY0NDg1ZGMtM2RmOS00NzhjLTlkMTItNWYzMzY1MTI5MGU0Iiwid29ya3NwYWNlSWQiOiJiMWE5N2U0ZC1mMzRmLTQ4ZDUtYTQ2Ni02MWUwZjdjOTNmOTEiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTczMjg2NTE4MiwiZXhwIjoxNzM1Mjg0MzgyfQ.ipFTCOanbQVlowLOQlrHfBz6N0VqfvslUOYyqxYTxMs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNzY0NDg1ZGMtM2RmOS00NzhjLTlkMTItNWYzMzY1MTI5MGU0Iiwid29ya3NwYWNlSWQiOiJiMWE5N2U0ZC1mMzRmLTQ4ZDUtYTQ2Ni02MWUwZjdjOTNmOTEiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTczMjg2NTE4MiwiZXhwIjoxNzM1Mjg0MzgyfQ.ipFTCOanbQVlowLOQlrHfBz6N0VqfvslUOYyqxYTxMs"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"inviteId\":\"a809c904-23ca-49f1-98b7-f0262ce1baa8\",\r\n\r\n    // \"customerDetails\":{\"customerCode\":\"848111\"},\r\n    // \"customerName\": \"Gangadhar\",\r\n    // \"companyName\": \"Dharti Masala \",\r\n    // \"telephone\": \"0913459870051\"\r\n\r\n    \"customerDetails\": {\r\n\r\n                \"name\": \"Alekhya\", //sdfghjghn\r\n\r\n                \"companyName\": \"Alekhya101\",   //sdfgh dfgh\r\n\r\n                \"telephone\": \"0917514561286\", //previous mbl no. 7513648516\r\n\r\n                \"email\": \"Alekhya101@yopmail.com\", \r\n\r\n                \"CSTNumber\": \"A1011\",\r\n\r\n                \"dlNumber\": \"73934\",\r\n\r\n                \"dlExpiry\": \"2026-07-27\",\r\n                \"customerCode\":\"0001011\",\r\n                \"languageCode\" :\"te\",\r\n                // \"distributorCode\": \"0000551\", //previous 0000000\r\n\r\n                \"gstin\": \"ABSCEFdfgyuHKH\",\r\n\r\n                \"physicalAddress\": {\r\n\r\n                    \"address1\": \"Mumbai\",\r\n\r\n                    \"address2\": \"Mumbai\"\r\n\r\n                },\r\n\r\n                \"shippingAddress\": {\r\n\r\n                    \"shippingAddress1\": \"Mumbai\",\r\n\r\n                    \"shippingAddress2\": \"Mumbai\",\r\n\r\n                    \"city\": \"Mumbai\",\r\n\r\n                    \"state\": \"MAHARASHTRA\",\r\n\r\n                    \"countryCode\": \"IN\",\r\n\r\n                    \"pincode\": \"400001\"\r\n\r\n                },\r\n\r\n                \"postalCode\": \"400001\",\r\n\r\n                \"stateCode\": \"27\",\r\n\r\n                \"countryCode\": \"IN\",\r\n\r\n                \"cityName\": \"Mumbaix\",\r\n\r\n                \"grossCreditLimit\": 50000,\r\n\r\n                \"creditLimitPeriod\": 30\r\n\r\n            },\r\n\r\n\r\n\r\n            \"cfa\": [\r\n\r\n                {\r\n\r\n                    \"divisionCodes\": [\r\n\r\n                        {\r\n\r\n                            \"code\": \"SM01\"\r\n\r\n                        },\r\n\r\n                        {\r\n\r\n                            \"code\": \"CU01\"\r\n\r\n                        }\r\n\r\n                    ],\r\n\r\n                    \"cfaCode\": \"MSCFA01\",\r\n\r\n                    \"salesOrg\": \"\"\r\n\r\n                }\r\n\r\n            ]\r\n\r\n        \r\n      \r\n\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-qa.zono.digital/hub/orgs/api/customer/update/b1a97e4d-f34f-48d5-a466-61e0f7c93f91?sellerWorkspaceId=b1a97e4d-f34f-48d5-a466-61e0f7c93f91",
+					"protocol": "https",
+					"host": [
+						"api-qa",
+						"zono",
+						"digital"
+					],
+					"path": [
+						"hub",
+						"orgs",
+						"api",
+						"customer",
+						"update",
+						"b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+					],
+					"query": [
+						{
+							"key": "sellerWorkspaceId",
+							"value": "b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://api-qa.zono.digital/hub/orgs/api/customer/update/b1a97e4d-f34f-48d5-a466-61e0f7c93f91?sellerWorkspaceId=b1a97e4d-f34f-48d5-a466-61e0f7c93f91' \\\r\n\r\n--header 'Content-Type: application/json' \\\r\n\r\n--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNzY0NDg1ZGMtM2RmOS00NzhjLTlkMTItNWYzMzY1MTI5MGU0Iiwid29ya3NwYWNlSWQiOiJiMWE5N2U0ZC1mMzRmLTQ4ZDUtYTQ2Ni02MWUwZjdjOTNmOTEiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyNjg0MzkwNSwiZXhwIjoxNzI5MjYzMTA1fQ.UCHW_-oLTA7BbGWUYQu1dLUTvGYFViCZQVd2VW_CQuM' \\\r\n\r\n--data '{\r\n\r\n    \"inviteId\":\"0e52ae4f-c1f0-4c4d-935d-292e74e1f4cf\",\r\n\r\n    \"customerDetails\":{\"customerCode\":\"ABCD\"}\r\n\r\n}'"
+			},
+			"response": []
+		},
+		{
+			"name": "Customer-details-API",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNzY0NDg1ZGMtM2RmOS00NzhjLTlkMTItNWYzMzY1MTI5MGU0Iiwid29ya3NwYWNlSWQiOiJiMWE5N2U0ZC1mMzRmLTQ4ZDUtYTQ2Ni02MWUwZjdjOTNmOTEiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyOTQ4Njk0NywiZXhwIjoxNzMxOTA2MTQ3fQ.JgV-IL-3b_E4nFEu84jq9bzfWUmtxGQ7c61msNuy8KU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNzY0NDg1ZGMtM2RmOS00NzhjLTlkMTItNWYzMzY1MTI5MGU0Iiwid29ya3NwYWNlSWQiOiJiMWE5N2U0ZC1mMzRmLTQ4ZDUtYTQ2Ni02MWUwZjdjOTNmOTEiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyNTM1MDM5MywiZXhwIjoxNzI3NzY5NTkzfQ.oa079bg3yxeqLR-Tb_bJXD6A8plR2AsN5IPkvQe3D10"
+					}
+				],
+				"url": {
+					"raw": "https://api-qa.zono.digital/hub/orgs/api/customer/details/b1a97e4d-f34f-48d5-a466-61e0f7c93f91?inviteId=b15ad59b-6ede-4c2e-8786-b704dc05f21f&sellerWorkspaceId=b1a97e4d-f34f-48d5-a466-61e0f7c93f91&includeInactive=true&includeCFA=true",
+					"protocol": "https",
+					"host": [
+						"api-qa",
+						"zono",
+						"digital"
+					],
+					"path": [
+						"hub",
+						"orgs",
+						"api",
+						"customer",
+						"details",
+						"b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+					],
+					"query": [
+						{
+							"key": "inviteId",
+							"value": "b15ad59b-6ede-4c2e-8786-b704dc05f21f"
+						},
+						{
+							"key": "sellerWorkspaceId",
+							"value": "b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+						},
+						{
+							"key": "includeInactive",
+							"value": "true"
+						},
+						{
+							"key": "includeCFA",
+							"value": "true"
+						},
+						{
+							"key": "status",
+							"value": "N",
+							"disabled": true
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://api-qa.zono.digital/hub/orgs/api/customer/details/b1a97e4d-f34f-48d5-a466-61e0f7c93f91?inviteId=0e52ae4f-c1f0-4c4d-935d-292e74e1f4cf&sellerWorkspaceId=b1a97e4d-f34f-48d5-a466-61e0f7c93f91' \\\r\n--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNzY0NDg1ZGMtM2RmOS00NzhjLTlkMTItNWYzMzY1MTI5MGU0Iiwid29ya3NwYWNlSWQiOiJiMWE5N2U0ZC1mMzRmLTQ4ZDUtYTQ2Ni02MWUwZjdjOTNmOTEiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyNTM1MDM5MywiZXhwIjoxNzI3NzY5NTkzfQ.oa079bg3yxeqLR-Tb_bJXD6A8plR2AsN5IPkvQe3D10'"
+			},
+			"response": []
+		},
+		{
+			"name": "Create or Update Division API",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNzY0NDg1ZGMtM2RmOS00NzhjLTlkMTItNWYzMzY1MTI5MGU0Iiwid29ya3NwYWNlSWQiOiJiMWE5N2U0ZC1mMzRmLTQ4ZDUtYTQ2Ni02MWUwZjdjOTNmOTEiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyOTQ4Njk0NywiZXhwIjoxNzMxOTA2MTQ3fQ.JgV-IL-3b_E4nFEu84jq9bzfWUmtxGQ7c61msNuy8KU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\""
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "Referer",
+						"value": "https://app-qa.zono.digital/"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNGI5MjE0MzItYjAyNy00ZGMyLWE5YjctNDkzZDIzMmUyZjYzIiwid29ya3NwYWNlSWQiOiI2ZjNjODFmMS0xM2EzLTRlMGYtYmZkZS1hMmI3MWYyNjM2YmYiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyNTM2NDA4MiwiZXhwIjoxNzI3NzgzMjgyfQ.rbC6zwplR8IbDWbNg4-01gqBi8_BMewL4Yvg_iaWNq4"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Maggi Masala\",\r\n    \"companyCode\": \"848001\",\r\n    \"code\": \"PBM01\",\r\n    \"headDivisionCode\": \"RTE01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-qa.zono.digital/hub/orgs/api/division/b1a97e4d-f34f-48d5-a466-61e0f7c93f91?sellerWorkspaceId=b1a97e4d-f34f-48d5-a466-61e0f7c93f91",
+					"protocol": "https",
+					"host": [
+						"api-qa",
+						"zono",
+						"digital"
+					],
+					"path": [
+						"hub",
+						"orgs",
+						"api",
+						"division",
+						"b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+					],
+					"query": [
+						{
+							"key": "sellerWorkspaceId",
+							"value": "b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://api-qa.zono.digital/hub/orgs/api/division/6f3c81f1-13a3-4e0f-bfde-a2b71f2636bf?sellerWorkspaceId=6f3c81f1-13a3-4e0f-bfde-a2b71f2636bf' \\\r\n\r\n--header 'sec-ch-ua: \"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\"' \\\r\n\r\n--header 'sec-ch-ua-platform: \"Windows\"' \\\r\n\r\n--header 'Referer: https://app-qa.zono.digital/' \\\r\n\r\n--header 'sec-ch-ua-mobile: ?0' \\\r\n\r\n--header 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNGI5MjE0MzItYjAyNy00ZGMyLWE5YjctNDkzZDIzMmUyZjYzIiwid29ya3NwYWNlSWQiOiI2ZjNjODFmMS0xM2EzLTRlMGYtYmZkZS1hMmI3MWYyNjM2YmYiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyNTM2NDA4MiwiZXhwIjoxNzI3NzgzMjgyfQ.rbC6zwplR8IbDWbNg4-01gqBi8_BMewL4Yvg_iaWNq4' \\\r\n\r\n--header 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36' \\\r\n\r\n--header 'content-type: application/json' \\\r\n\r\n--data '{\"name\":\"DIVTEST0123\",\"companyCode\":\"VSRINC\",\"code\":\"240401\",\"headDivisionCode\":\"SPICE\"}'"
+			},
+			"response": []
+		},
+		{
+			"name": "create or update head division",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNzY0NDg1ZGMtM2RmOS00NzhjLTlkMTItNWYzMzY1MTI5MGU0Iiwid29ya3NwYWNlSWQiOiJiMWE5N2U0ZC1mMzRmLTQ4ZDUtYTQ2Ni02MWUwZjdjOTNmOTEiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyNjg0MzkwNSwiZXhwIjoxNzI5MjYzMTA1fQ.UCHW_-oLTA7BbGWUYQu1dLUTvGYFViCZQVd2VW_CQuM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNzY0NDg1ZGMtM2RmOS00NzhjLTlkMTItNWYzMzY1MTI5MGU0Iiwid29ya3NwYWNlSWQiOiJiMWE5N2U0ZC1mMzRmLTQ4ZDUtYTQ2Ni02MWUwZjdjOTNmOTEiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyNjg0MzkwNSwiZXhwIjoxNzI5MjYzMTA1fQ.UCHW_-oLTA7BbGWUYQu1dLUTvGYFViCZQVd2VW_CQuM"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"name\": \"Blended Spices\",\r\n    \"code\": \"BS01\",\r\n    \"isDefault\": false,\r\n    \"isActive\": true,\r\n    \"companyCode\": \"43298701\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-qa.zono.digital/hub/orgs/api/headDivision/b1a97e4d-f34f-48d5-a466-61e0f7c93f91?sellerWorkspaceId=b1a97e4d-f34f-48d5-a466-61e0f7c93f91",
+					"protocol": "https",
+					"host": [
+						"api-qa",
+						"zono",
+						"digital"
+					],
+					"path": [
+						"hub",
+						"orgs",
+						"api",
+						"headDivision",
+						"b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+					],
+					"query": [
+						{
+							"key": "sellerWorkspaceId",
+							"value": "b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://api-qa.zono.digital/hub/orgs/api/headDivision/6f3c81f1-13a3-4e0f-bfde-a2b71f2636bf?sellerWorkspaceId=6f3c81f1-13a3-4e0f-bfde-a2b71f2636bf' \\\r\n--header 'Content-Type: application/json' \\\r\n--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNGI5MjE0MzItYjAyNy00ZGMyLWE5YjctNDkzZDIzMmUyZjYzIiwid29ya3NwYWNlSWQiOiI2ZjNjODFmMS0xM2EzLTRlMGYtYmZkZS1hMmI3MWYyNjM2YmYiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyNzc3NDY5NSwiZXhwIjoxNzMwMTkzODk1fQ.HxSj0iFEjP0mHFh7FIRY7eLXB6oSDkTs1D5IQFSy-8Y' \\\r\n--data '{\r\n    \r\n    \"name\": \"Head Div-10\",\r\n    \"code\": \"10\",\r\n    \"isDefault\": false,\r\n    \"isActive\": true,\r\n    \"companyCode\": \"VSRINC\"\r\n}'"
+			},
+			"response": []
+		},
+		{
+			"name": "team track [clockIn clockOut]",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNzY0NDg1ZGMtM2RmOS00NzhjLTlkMTItNWYzMzY1MTI5MGU0Iiwid29ya3NwYWNlSWQiOiJiMWE5N2U0ZC1mMzRmLTQ4ZDUtYTQ2Ni02MWUwZjdjOTNmOTEiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTczMTA1ODUyNiwiZXhwIjoxNzMzNDc3NzI2fQ.RDLM7ZC0-tpe84LdppbhMbL-9ddn_VgKDuEpvdWvMtg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"teamMemberId\": \"33402227-54a1-46b9-b833-409595777fe3\",\r\n    \"date\": \"2024-11-11\",\r\n    // \"clockInTime\": \"11:58:10\",\r\n    \"clockOutTime\": \"10:58:10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-qa.zono.digital/hub/orgs/api/team-track/b1a97e4d-f34f-48d5-a466-61e0f7c93f91?sellerWorkspaceId=b1a97e4d-f34f-48d5-a466-61e0f7c93f91",
+					"protocol": "https",
+					"host": [
+						"api-qa",
+						"zono",
+						"digital"
+					],
+					"path": [
+						"hub",
+						"orgs",
+						"api",
+						"team-track",
+						"b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+					],
+					"query": [
+						{
+							"key": "sellerWorkspaceId",
+							"value": "b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://api-qa.zono.digital/hub/orgs/api/team-track/09650635-c7d6-4a3c-af9b-4187449fb16e?sellerWorkspaceId=09650635-c7d6-4a3c-af9b-4187449fb16e' \\\r\n--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiOTY1ZjNjYmItYTJlMi00MDI1LWJmOTMtYzJlZjc3OWIzNjkxIiwid29ya3NwYWNlSWQiOiIwOTY1MDYzNS1jN2Q2LTRhM2MtYWY5Yi00MTg3NDQ5ZmIxNmUiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyNzk1MjY2MiwiZXhwIjoxNzMwMzcxODYyfQ.-ZT2pN4jYGQk61sP8-3TvEfkg4WXsldztzF_P-A3_FA' \\\r\n--header 'Content-Type: application/json' \\\r\n--data '{\r\n    \"teamMemberId\": \"71f97e6d-4005-47c4-95f2-1d407c2c1a7e\",\r\n    \"date\": \"2024-10-03\",\r\n    \"clockInTime\": \"14:58:10\",\r\n    \"clockOutTime\": \"15:58:10\"\r\n}'"
+			},
+			"response": []
+		},
+		{
+			"name": "team-track/details  [clockIn ClockedOut]",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNzY0NDg1ZGMtM2RmOS00NzhjLTlkMTItNWYzMzY1MTI5MGU0Iiwid29ya3NwYWNlSWQiOiJiMWE5N2U0ZC1mMzRmLTQ4ZDUtYTQ2Ni02MWUwZjdjOTNmOTEiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTczMTA1ODUyNiwiZXhwIjoxNzMzNDc3NzI2fQ.RDLM7ZC0-tpe84LdppbhMbL-9ddn_VgKDuEpvdWvMtg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNzY0NDg1ZGMtM2RmOS00NzhjLTlkMTItNWYzMzY1MTI5MGU0Iiwid29ya3NwYWNlSWQiOiJiMWE5N2U0ZC1mMzRmLTQ4ZDUtYTQ2Ni02MWUwZjdjOTNmOTEiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyNjg0MzkwNSwiZXhwIjoxNzI5MjYzMTA1fQ.UCHW_-oLTA7BbGWUYQu1dLUTvGYFViCZQVd2VW_CQuM"
+					}
+				],
+				"url": {
+					"raw": "https://api-qa.zono.digital/hub/orgs/api/team-track/details/b1a97e4d-f34f-48d5-a466-61e0f7c93f91?sellerWorkspaceId=b1a97e4d-f34f-48d5-a466-61e0f7c93f91&date=2024-11-11&teamMemberId=33402227-54a1-46b9-b833-409595777fe3",
+					"protocol": "https",
+					"host": [
+						"api-qa",
+						"zono",
+						"digital"
+					],
+					"path": [
+						"hub",
+						"orgs",
+						"api",
+						"team-track",
+						"details",
+						"b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+					],
+					"query": [
+						{
+							"key": "sellerWorkspaceId",
+							"value": "b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+						},
+						{
+							"key": "date",
+							"value": "2024-11-11"
+						},
+						{
+							"key": "teamMemberId",
+							"value": "33402227-54a1-46b9-b833-409595777fe3"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://api-qa.zono.digital/hub/orgs/api/team-track/details/09650635-c7d6-4a3c-af9b-4187449fb16e?sellerWorkspaceId=09650635-c7d6-4a3c-af9b-4187449fb16e&date=2024-10-03&teamMemberId=71f97e6d-4005-47c4-95f2-1d407c2c1a7e' \\\r\n--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiOTY1ZjNjYmItYTJlMi00MDI1LWJmOTMtYzJlZjc3OWIzNjkxIiwid29ya3NwYWNlSWQiOiIwOTY1MDYzNS1jN2Q2LTRhM2MtYWY5Yi00MTg3NDQ5ZmIxNmUiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyNzk1MjY2MiwiZXhwIjoxNzMwMzcxODYyfQ.-ZT2pN4jYGQk61sP8-3TvEfkg4WXsldztzF_P-A3_FA'"
+			},
+			"response": []
+		},
+		{
+			"name": "team-track-all ClockedIn&ClockedOut",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNzY0NDg1ZGMtM2RmOS00NzhjLTlkMTItNWYzMzY1MTI5MGU0Iiwid29ya3NwYWNlSWQiOiJiMWE5N2U0ZC1mMzRmLTQ4ZDUtYTQ2Ni02MWUwZjdjOTNmOTEiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTczMTA1ODUyNiwiZXhwIjoxNzMzNDc3NzI2fQ.RDLM7ZC0-tpe84LdppbhMbL-9ddn_VgKDuEpvdWvMtg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiOTY1ZjNjYmItYTJlMi00MDI1LWJmOTMtYzJlZjc3OWIzNjkxIiwid29ya3NwYWNlSWQiOiIwOTY1MDYzNS1jN2Q2LTRhM2MtYWY5Yi00MTg3NDQ5ZmIxNmUiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyNzk1MjY2MiwiZXhwIjoxNzMwMzcxODYyfQ.-ZT2pN4jYGQk61sP8-3TvEfkg4WXsldztzF_P-A3_FA"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api-qa.zono.digital/hub/orgs/api/team-track/b1a97e4d-f34f-48d5-a466-61e0f7c93f91?sellerWorkspaceId=b1a97e4d-f34f-48d5-a466-61e0f7c93f91&teamMemberId=33402227-54a1-46b9-b833-409595777fe3&startDate=2024-10-01&endDate=2024-11-12",
+					"protocol": "https",
+					"host": [
+						"api-qa",
+						"zono",
+						"digital"
+					],
+					"path": [
+						"hub",
+						"orgs",
+						"api",
+						"team-track",
+						"b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+					],
+					"query": [
+						{
+							"key": "sellerWorkspaceId",
+							"value": "b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+						},
+						{
+							"key": "teamMemberId",
+							"value": "33402227-54a1-46b9-b833-409595777fe3"
+						},
+						{
+							"key": "startDate",
+							"value": "2024-10-01"
+						},
+						{
+							"key": "endDate",
+							"value": "2024-11-12"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://api-qa.zono.digital/hub/orgs/api/team-track/09650635-c7d6-4a3c-af9b-4187449fb16e?sellerWorkspaceId=09650635-c7d6-4a3c-af9b-4187449fb16e&teamMemberId=71f97e6d-4005-47c4-95f2-1d407c2c1a7e&startDate=2024-10-01&endDate=2024-10-04' \\\r\n--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiOTY1ZjNjYmItYTJlMi00MDI1LWJmOTMtYzJlZjc3OWIzNjkxIiwid29ya3NwYWNlSWQiOiIwOTY1MDYzNS1jN2Q2LTRhM2MtYWY5Yi00MTg3NDQ5ZmIxNmUiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyNzk1MjY2MiwiZXhwIjoxNzMwMzcxODYyfQ.-ZT2pN4jYGQk61sP8-3TvEfkg4WXsldztzF_P-A3_FA' \\\r\n--header 'Content-Type: application/json' \\\r\n--data ''"
+			},
+			"response": []
+		},
+		{
+			"name": "Create and Update CFA",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\""
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "Referer",
+						"value": "https://app-qa.zono.digital/"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNzY0NDg1ZGMtM2RmOS00NzhjLTlkMTItNWYzMzY1MTI5MGU0Iiwid29ya3NwYWNlSWQiOiJiMWE5N2U0ZC1mMzRmLTQ4ZDUtYTQ2Ni02MWUwZjdjOTNmOTEiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyNjg0MzkwNSwiZXhwIjoxNzI5MjYzMTA1fQ.UCHW_-oLTA7BbGWUYQu1dLUTvGYFViCZQVd2VW_CQuM"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"supplierName\": \"Ner Dist\",\r\n    \"fulfillmentLocationCode\": \"MSCFA057\",\r\n    \"fulfillmentAddress\": \"Ner\",\r\n    \"postalCode\": \"500056\",\r\n    \"stateCode\": \"27\",\r\n    \"country\": \"IN\",\r\n    \"workspaceId\": \"b1a97e4d-f34f-48d5-a466-61e0f7c93f91\",\r\n    \"cityName\": \"Jalgaon\",\r\n    \"phone\": \"9745454615\",\r\n    \"email\": \"jalgaondist@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-qa.zono.digital/hub/orgs/api/cfa/b1a97e4d-f34f-48d5-a466-61e0f7c93f91?sellerWorkspaceId=b1a97e4d-f34f-48d5-a466-61e0f7c93f91",
+					"protocol": "https",
+					"host": [
+						"api-qa",
+						"zono",
+						"digital"
+					],
+					"path": [
+						"hub",
+						"orgs",
+						"api",
+						"cfa",
+						"b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+					],
+					"query": [
+						{
+							"key": "sellerWorkspaceId",
+							"value": "b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://api-qa.zono.digital/hub/orgs/api/cfa/b1a97e4d-f34f-48d5-a466-61e0f7c93f91?sellerWorkspaceId=b1a97e4d-f34f-48d5-a466-61e0f7c93f91' \\\r\n--header 'sec-ch-ua: \"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\"' \\\r\n--header 'sec-ch-ua-platform: \"Windows\"' \\\r\n--header 'Referer: https://app-qa.zono.digital/' \\\r\n--header 'sec-ch-ua-mobile: ?0' \\\r\n--header 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNzY0NDg1ZGMtM2RmOS00NzhjLTlkMTItNWYzMzY1MTI5MGU0Iiwid29ya3NwYWNlSWQiOiJiMWE5N2U0ZC1mMzRmLTQ4ZDUtYTQ2Ni02MWUwZjdjOTNmOTEiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyNjg0MzkwNSwiZXhwIjoxNzI5MjYzMTA1fQ.UCHW_-oLTA7BbGWUYQu1dLUTvGYFViCZQVd2VW_CQuM' \\\r\n--header 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36' \\\r\n--header 'content-type: application/json' \\\r\n--data-raw '{\r\n    \"supplierName\": \"Jalgaon Dist\",\r\n    \"fulfillmentLocationCode\": \"MSCFA006\",\r\n    \"fulfillmentAddress\": \"Jalgaon\",\r\n    \"postalCode\": \"500004\",\r\n    \"stateCode\": \"27\",\r\n    \"country\": \"IN\",\r\n    \"workspaceId\": \"b1a97e4d-f34f-48d5-a466-61e0f7c93f91\",\r\n    \"cityName\": \"Jalgaon\",\r\n    \"phone\": \"9745454515\",\r\n    \"email\": \"jalgaondist@gmail.com\"\r\n}'"
+			},
+			"response": []
+		},
+		{
+			"name": "Team Details API",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNzY0NDg1ZGMtM2RmOS00NzhjLTlkMTItNWYzMzY1MTI5MGU0Iiwid29ya3NwYWNlSWQiOiJiMWE5N2U0ZC1mMzRmLTQ4ZDUtYTQ2Ni02MWUwZjdjOTNmOTEiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyOTQ4Njk0NywiZXhwIjoxNzMxOTA2MTQ3fQ.JgV-IL-3b_E4nFEu84jq9bzfWUmtxGQ7c61msNuy8KU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNzY0NDg1ZGMtM2RmOS00NzhjLTlkMTItNWYzMzY1MTI5MGU0Iiwid29ya3NwYWNlSWQiOiJiMWE5N2U0ZC1mMzRmLTQ4ZDUtYTQ2Ni02MWUwZjdjOTNmOTEiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyOTQ4Njk0NywiZXhwIjoxNzMxOTA2MTQ3fQ.JgV-IL-3b_E4nFEu84jq9bzfWUmtxGQ7c61msNuy8KU"
+					},
+					{
+						"key": "origin",
+						"value": "http://localhost:4200"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "http://localhost:4200/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "cross-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+					}
+				],
+				"url": {
+					"raw": "https://api-qa.zono.digital/hub/orgs/api/team/details/b1a97e4d-f34f-48d5-a466-61e0f7c93f91?teamMemberId=64fe33ef-c5f2-4ede-a363-9727448945bf&sellerWorkspaceId=b1a97e4d-f34f-48d5-a466-61e0f7c93f91 ",
+					"protocol": "https",
+					"host": [
+						"api-qa",
+						"zono",
+						"digital"
+					],
+					"path": [
+						"hub",
+						"orgs",
+						"api",
+						"team",
+						"details",
+						"b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+					],
+					"query": [
+						{
+							"key": "teamMemberId",
+							"value": "64fe33ef-c5f2-4ede-a363-9727448945bf"
+						},
+						{
+							"key": "searchKey",
+							"value": "8888866666",
+							"disabled": true
+						},
+						{
+							"key": "sellerWorkspaceId",
+							"value": "b1a97e4d-f34f-48d5-a466-61e0f7c93f91 "
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'localhost:3000/orgs/api/team/details/09650635-c7d6-4a3c-af9b-4187449fb16e?teamMemberId=ba5c4e5e-3112-4788-8c89-88f07cceafe4&sellerWorkspaceId=09650635-c7d6-4a3c-af9b-4187449fb16e' \\\r\n--header 'accept: */*' \\\r\n--header 'accept-language: en-GB,en-US;q=0.9,en;q=0.8' \\\r\n--header 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtZXNzYWdlIjoiSDRzSUFBQUFBQUFBLzB6UndXNmpQQkRBOFZmNU5PZFFnUTJrY1ByYVpGc1pGYWRwYVlteldsVmdURERZY1lUcEVsanR1NitRZXVoMTlKdi9ZZVlQQ0YxSUJUR014YW5SUlM5cVl5cjcvMlF1eS95R0d3MHJxR1Z2QjFwb0FUSGtYKzYvaHdYQ0NtUUZNVVJoVUdOZWxrNkJCSEo4RndWT1dVZlk0VWpVNjNWVTRqRHlGbXZ2emZCbVJROXhYU2dyVnFETVNaNno2YktrQjFGb001NUZEeXM0aTNIemFRZWp2OW5lS0FIeCtWT3BGUXltRTJlSVFVeEpVejV5dVpNSmVadUpSeVd4NVB3UzhBMEpTWGM1dkcrUzZFWk1pY2ZSKzBUYXk1cG8xWkhXeUYzR3ZHTkxXNmJKd0xKRXBkSjEweTN4bnZKRTc3SjBZSE9pamkzSHU1ek10TzJ1Ukk2eVF0RlVZRHF5bktyWGZDOTNrb3hMSjkyeW1iNTZMVVY3OUpTOU5DbEtCNWF6Z0MzTjdJVHBkaDhjTmJsUy9TYWZOZ2t1Y2RKemZOOHc5UDVhb3F2aUV3bnpLV21PajY0OEhGeEx0R3FxRFFuVGpFOTA3cnkwWlNpVm96d2VtcEcwNWtybmRFeG5mdDF0MlZUdmI1eGpoaTdVYjluanZnczkrM3pyNE96M2o3bzcrZm5CcW1vZTVvZVBaK2NPZnp6Y3dRbytyZWkvRHA3Q0NrYlRkL1pTY0VHV1A3cFJHTGdoRGh5K3JrTEhMekIzaWpvcUhkKzdYZnQrVkpkZUtMNHZ2UmdsTE1RL29hZzAvUHI3THdBQS8vOVZQVWp0VHdJQUFBPT0iLCJleHAiOjE3MjgzMDE1NDQsImlzcyI6Im15LWlzc3VlciJ9.6U97k-g4IBYMg89XoVLvZ0vooCLeE3vGUo1jd1rjzKs' \\\r\n--header 'origin: http://localhost:4200' \\\r\n--header 'priority: u=1, i' \\\r\n--header 'referer: http://localhost:4200/' \\\r\n--header 'sec-ch-ua: \"Google Chrome\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\"' \\\r\n--header 'sec-ch-ua-mobile: ?0' \\\r\n--header 'sec-ch-ua-platform: \"macOS\"' \\\r\n--header 'sec-fetch-dest: empty' \\\r\n--header 'sec-fetch-mode: cors' \\\r\n--header 'sec-fetch-site: cross-site' \\\r\n--header 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36'"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Division/Internal/workspaceId",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiMDdkMGUzYTctMmEwMy00NDkyLWE5MDItYmNlOWU4OGIwMjU2Iiwic2VydmVyIjoiem9ub2FkbWluIiwiaWF0IjoxNzMwODA4ODAxfQ.8dcCPSuZkCPQgfA_FEPi7678SQq3H83yANO01PUFQSU"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api-qa.zono.digital/orgs/api/division/internal/b1a97e4d-f34f-48d5-a466-61e0f7c93f91?codes=MGM01&ids=02215912-840c-4162-aca9-de8b21a38b03&includeInactive=true&includeHeadDivision=false",
+					"protocol": "https",
+					"host": [
+						"api-qa",
+						"zono",
+						"digital"
+					],
+					"path": [
+						"orgs",
+						"api",
+						"division",
+						"internal",
+						"b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+					],
+					"query": [
+						{
+							"key": "codes",
+							"value": "MGM01"
+						},
+						{
+							"key": "ids",
+							"value": "02215912-840c-4162-aca9-de8b21a38b03"
+						},
+						{
+							"key": "includeInactive",
+							"value": "true"
+						},
+						{
+							"key": "includeHeadDivision",
+							"value": "false"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://api-qa.zono.digital/orgs/api/division/internal/e72e1426-1a58-4c41-96f0-184bd439699f?codes=79&ids=004b2be9-8209-4c3e-8ef7-2c3bb5e7e351&includeInactive=true&includeHeadDivision=false' \\\r\n--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiMDdkMGUzYTctMmEwMy00NDkyLWE5MDItYmNlOWU4OGIwMjU2Iiwic2VydmVyIjoiem9ub2FkbWluIiwiaWF0IjoxNzMwODA4ODAxfQ.8dcCPSuZkCPQgfA_FEPi7678SQq3H83yANO01PUFQSU' \\\r\n--header 'Content-Type: application/json'"
+			},
+			"response": []
+		},
+		{
+			"name": "Get/division/codes",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiMDdkMGUzYTctMmEwMy00NDkyLWE5MDItYmNlOWU4OGIwMjU2Iiwic2VydmVyIjoiem9ub2FkbWluIiwiaWF0IjoxNzMwODA4ODAxfQ.8dcCPSuZkCPQgfA_FEPi7678SQq3H83yANO01PUFQSU"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api-qa.zono.digital/orgs/api/division/codes?workspaceId=b1a97e4d-f34f-48d5-a466-61e0f7c93f91&codes=KDFIFK651&ids=4878b169-1210-4cbf-a1c0-b29e7e122f81&includeInactive=true&includeHeadDivision=false",
+					"protocol": "https",
+					"host": [
+						"api-qa",
+						"zono",
+						"digital"
+					],
+					"path": [
+						"orgs",
+						"api",
+						"division",
+						"codes"
+					],
+					"query": [
+						{
+							"key": "workspaceId",
+							"value": "b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+						},
+						{
+							"key": "codes",
+							"value": "KDFIFK651"
+						},
+						{
+							"key": "codes",
+							"value": "PI8545",
+							"disabled": true
+						},
+						{
+							"key": "ids",
+							"value": "4878b169-1210-4cbf-a1c0-b29e7e122f81"
+						},
+						{
+							"key": "includeInactive",
+							"value": "true"
+						},
+						{
+							"key": "includeHeadDivision",
+							"value": "false"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://api-qa.zono.digital/orgs/api/division/codes?workspaceId=e72e1426-1a58-4c41-96f0-184bd439699f&codes=79&codes=35&ids=004b2be9-8209-4c3e-8ef7-2c3bb5e7e351&includeInactive=true&includeHeadDivision=true' \\\r\n--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiMDdkMGUzYTctMmEwMy00NDkyLWE5MDItYmNlOWU4OGIwMjU2Iiwic2VydmVyIjoiem9ub2FkbWluIiwiaWF0IjoxNzMwODA4ODAxfQ.8dcCPSuZkCPQgfA_FEPi7678SQq3H83yANO01PUFQSU' \\\r\n--header 'Content-Type: application/json'"
+			},
+			"response": []
+		},
+		{
+			"name": "Get /customer/details/workspace/:invitedWorkspaceId\"",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiMDdkMGUzYTctMmEwMy00NDkyLWE5MDItYmNlOWU4OGIwMjU2Iiwic2VydmVyIjoiem9ub2FkbWluIiwiaWF0IjoxNzMwODA4ODAxfQ.8dcCPSuZkCPQgfA_FEPi7678SQq3H83yANO01PUFQSU"
+					}
+				],
+				"url": {
+					"raw": "https://api-qa.zono.digital/orgs/api/customer/details/workspace/c867ccbf-d7ba-4365-821f-40aa6799b9b2?sellerWorkspaceId=b1a97e4d-f34f-48d5-a466-61e0f7c93f91",
+					"protocol": "https",
+					"host": [
+						"api-qa",
+						"zono",
+						"digital"
+					],
+					"path": [
+						"orgs",
+						"api",
+						"customer",
+						"details",
+						"workspace",
+						"c867ccbf-d7ba-4365-821f-40aa6799b9b2"
+					],
+					"query": [
+						{
+							"key": "sellerWorkspaceId",
+							"value": "b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://api-qa.zono.digital/orgs/api/customer/details/workspace/ed438a61-c079-4c60-bafe-15110730d18c?sellerWorkspaceId=09650635-c7d6-4a3c-af9b-4187449fb16e' \\\r\n--header 'Content-Type: application/json' \\\r\n--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiMDdkMGUzYTctMmEwMy00NDkyLWE5MDItYmNlOWU4OGIwMjU2Iiwic2VydmVyIjoiem9ub2FkbWluIiwiaWF0IjoxNzMwODA4ODAxfQ.8dcCPSuZkCPQgfA_FEPi7678SQq3H83yANO01PUFQSU'"
+			},
+			"response": []
+		},
+		{
+			"name": "Get /customer/find/distributor/:workspaceId",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiMDdkMGUzYTctMmEwMy00NDkyLWE5MDItYmNlOWU4OGIwMjU2Iiwic2VydmVyIjoiem9ub2FkbWluIiwiaWF0IjoxNzMwODA4ODAxfQ.8dcCPSuZkCPQgfA_FEPi7678SQq3H83yANO01PUFQSU"
+					}
+				],
+				"url": {
+					"raw": "https://api-qa.zono.digital/orgs/api/customer/find/distributor/b1a97e4d-f34f-48d5-a466-61e0f7c93f91?distributorCode=1234",
+					"protocol": "https",
+					"host": [
+						"api-qa",
+						"zono",
+						"digital"
+					],
+					"path": [
+						"orgs",
+						"api",
+						"customer",
+						"find",
+						"distributor",
+						"b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+					],
+					"query": [
+						{
+							"key": "distributorCode",
+							"value": "1234"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://api-qa.zono.digital/orgs/api/customer/find/distributor/09650635-c7d6-4a3c-af9b-4187449fb16e?distributorCode=145263' \\\r\n--header 'Content-Type: application/json' \\\r\n--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiMDdkMGUzYTctMmEwMy00NDkyLWE5MDItYmNlOWU4OGIwMjU2Iiwic2VydmVyIjoiem9ub2FkbWluIiwiaWF0IjoxNzMwODA4ODAxfQ.8dcCPSuZkCPQgfA_FEPi7678SQq3H83yANO01PUFQSU'"
+			},
+			"response": []
+		},
+		{
+			"name": "Get  /customer/detail/distributorCode/:workspaceId",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiMDdkMGUzYTctMmEwMy00NDkyLWE5MDItYmNlOWU4OGIwMjU2Iiwic2VydmVyIjoiem9ub2FkbWluIiwiaWF0IjoxNzMwODA4ODAxfQ.8dcCPSuZkCPQgfA_FEPi7678SQq3H83yANO01PUFQSU"
+					}
+				],
+				"url": {
+					"raw": "https://api-qa.zono.digital/orgs/api/customer/detail/distributorCode/b1a97e4d-f34f-48d5-a466-61e0f7c93f91?inviteIds=73cf4faf-f746-4d4e-ab56-27b7f883faae&inviteIds=9a9d72ec-9ea7-4def-b8f2-4f77ca123063&inviteIds=c7633340-e2f8-4bec-98f6-b34a117b0797",
+					"protocol": "https",
+					"host": [
+						"api-qa",
+						"zono",
+						"digital"
+					],
+					"path": [
+						"orgs",
+						"api",
+						"customer",
+						"detail",
+						"distributorCode",
+						"b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+					],
+					"query": [
+						{
+							"key": "inviteIds",
+							"value": "73cf4faf-f746-4d4e-ab56-27b7f883faae"
+						},
+						{
+							"key": "inviteIds",
+							"value": "9a9d72ec-9ea7-4def-b8f2-4f77ca123063"
+						},
+						{
+							"key": "inviteIds",
+							"value": "c7633340-e2f8-4bec-98f6-b34a117b0797"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://api-qa.zono.digital/orgs/api/customer/detail/distributorCode/09650635-c7d6-4a3c-af9b-4187449fb16e?inviteIds=043f3dbd-0689-4259-b743-15c54158b561&inviteIds=06c35e05-6bf4-42af-b67d-29f2f22baa6a&inviteIds=08f2ef0e-0b1c-46a8-895f-077afefe16f2' \\\r\n--header 'Content-Type: application/json' \\\r\n--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiMDdkMGUzYTctMmEwMy00NDkyLWE5MDItYmNlOWU4OGIwMjU2Iiwic2VydmVyIjoiem9ub2FkbWluIiwiaWF0IjoxNzMwODA4ODAxfQ.8dcCPSuZkCPQgfA_FEPi7678SQq3H83yANO01PUFQSU'"
+			},
+			"response": []
+		},
+		{
+			"name": "Get /customer/:inviteId",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiMDdkMGUzYTctMmEwMy00NDkyLWE5MDItYmNlOWU4OGIwMjU2Iiwic2VydmVyIjoiem9ub2FkbWluIiwiaWF0IjoxNzMwODA4ODAxfQ.8dcCPSuZkCPQgfA_FEPi7678SQq3H83yANO01PUFQSU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNzY0NDg1ZGMtM2RmOS00NzhjLTlkMTItNWYzMzY1MTI5MGU0Iiwid29ya3NwYWNlSWQiOiJiMWE5N2U0ZC1mMzRmLTQ4ZDUtYTQ2Ni02MWUwZjdjOTNmOTEiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTczMjYwODQzNSwiZXhwIjoxNzM1MDI3NjM1fQ.A0XGOHo7ayhOI_VJynUiOkYAfmg-xnDvVrPqHXFnsg4"
+					}
+				],
+				"url": {
+					"raw": "https://api-qa.zono.digital/orgs/api/customer/c7633340-e2f8-4bec-98f6-b34a117b0797?includeInviteDetails=true&sellerWorkspaceId=b1a97e4d-f34f-48d5-a466-61e0f7c93f91",
+					"protocol": "https",
+					"host": [
+						"api-qa",
+						"zono",
+						"digital"
+					],
+					"path": [
+						"orgs",
+						"api",
+						"customer",
+						"c7633340-e2f8-4bec-98f6-b34a117b0797"
+					],
+					"query": [
+						{
+							"key": "includeInviteDetails",
+							"value": "true"
+						},
+						{
+							"key": "sellerWorkspaceId",
+							"value": "b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://api-qa.zono.digital/hub/orgs/api/customer/0072f43a-0972-4c11-ba89-97cabbb9cd9d?includeInviteDetails=true&sellerWorkspaceId=09650635-c7d6-4a3c-af9b-4187449fb16e' \\\r\n--header 'Content-Type: application/json' \\\r\n--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiOTY1ZjNjYmItYTJlMi00MDI1LWJmOTMtYzJlZjc3OWIzNjkxIiwid29ya3NwYWNlSWQiOiIwOTY1MDYzNS1jN2Q2LTRhM2MtYWY5Yi00MTg3NDQ5ZmIxNmUiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTczMjUzNjU5MywiZXhwIjoxNzM0OTU1NzkzfQ.Dqt6LihyFcEKj-hTfDUbMwGFgDkils_cD-DPXdB6pfA'"
+			},
+			"response": []
+		},
+		{
+			"name": "GET /customer/search/:workspaceId",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXIiOnsiaWQiOiI0YjkyMTQzMi1iMDI3LTRkYzItYTliNy00OTNkMjMyZTJmNjMifX0sInNlcnZlciI6Inpvbm9hZG1pbiIsImlhdCI6MTczMjUyOTgxNn0.xG-k2S6rQF8fhBFwUwbQEBAoXWh4d_hIhJgJv1kRipU"
+					}
+				],
+				"url": {
+					"raw": "https://api-qa.zono.digital/orgs/api/customer/search/b1a97e4d-f34f-48d5-a466-61e0f7c93f91?phone=0919746461234&includeCFA=true&distributorCode=1234&inviteId=8c91b0f3-a278-4754-8673-305fa4f4bc29&gstin=XYZ123MNO567&companyName=Everest Masala&isActive=true",
+					"protocol": "https",
+					"host": [
+						"api-qa",
+						"zono",
+						"digital"
+					],
+					"path": [
+						"orgs",
+						"api",
+						"customer",
+						"search",
+						"b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+					],
+					"query": [
+						{
+							"key": "phone",
+							"value": "0919746461234"
+						},
+						{
+							"key": "includeCFA",
+							"value": "true"
+						},
+						{
+							"key": "distributorCode",
+							"value": "1234"
+						},
+						{
+							"key": "inviteId",
+							"value": "8c91b0f3-a278-4754-8673-305fa4f4bc29"
+						},
+						{
+							"key": "gstin",
+							"value": "XYZ123MNO567"
+						},
+						{
+							"key": "companyName",
+							"value": "Everest Masala"
+						},
+						{
+							"key": "isActive",
+							"value": "true"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://api-qa.zono.digital/orgs/api/customer/search/8ef5d569-3419-44e5-bb33-3ecfd260f796?phone=0919923432395&includeCFA=true&distributorCode=1715090884389&inviteId=691cfe68-2faa-47fa-a762-ed6603ab6763&gstin=27AAAPZ3324L1ZE&companyName=ASHISH%20AGENCIES%20MALEGAON' \\\r\n--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXIiOnsiaWQiOiI0YjkyMTQzMi1iMDI3LTRkYzItYTliNy00OTNkMjMyZTJmNjMifX0sInNlcnZlciI6Inpvbm9hZG1pbiIsImlhdCI6MTczMjUyOTgxNn0.xG-k2S6rQF8fhBFwUwbQEBAoXWh4d_hIhJgJv1kRipU'"
+			},
+			"response": []
+		},
+		{
+			"name": "GET customer/details/:inviteId",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXIiOnsiaWQiOiI0YjkyMTQzMi1iMDI3LTRkYzItYTliNy00OTNkMjMyZTJmNjMifX0sInNlcnZlciI6Inpvbm9hZG1pbiIsImlhdCI6MTczMjUyOTgxNn0.xG-k2S6rQF8fhBFwUwbQEBAoXWh4d_hIhJgJv1kRipU"
+					}
+				],
+				"url": {
+					"raw": "https://api-qa.zono.digital/orgs/api/customer/details/b15ad59b-6ede-4c2e-8786-b704dc05f21f",
+					"protocol": "https",
+					"host": [
+						"api-qa",
+						"zono",
+						"digital"
+					],
+					"path": [
+						"orgs",
+						"api",
+						"customer",
+						"details",
+						"b15ad59b-6ede-4c2e-8786-b704dc05f21f"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://api-qa.zono.digital/orgs/api/customer/details/8b998f81-e35f-4eea-8189-eea5a213640a' \\\r\n--header 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXIiOnsiaWQiOiI0YjkyMTQzMi1iMDI3LTRkYzItYTliNy00OTNkMjMyZTJmNjMifX0sInNlcnZlciI6Inpvbm9hZG1pbiIsImlhdCI6MTczMjUyOTgxNn0.xG-k2S6rQF8fhBFwUwbQEBAoXWh4d_hIhJgJv1kRipU'"
+			},
+			"response": []
+		},
+		{
+			"name": "GET /customers/valid/:workspaceId",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXIiOnsiaWQiOiI0YjkyMTQzMi1iMDI3LTRkYzItYTliNy00OTNkMjMyZTJmNjMifX0sInNlcnZlciI6Inpvbm9hZG1pbiIsImlhdCI6MTczMjUyOTgxNn0.xG-k2S6rQF8fhBFwUwbQEBAoXWh4d_hIhJgJv1kRipU"
+					}
+				],
+				"url": {
+					"raw": "https://api-qa.zono.digital/orgs/api/customers/valid/b1a97e4d-f34f-48d5-a466-61e0f7c93f91?inviteIds[]=9a9d72ec-9ea7-4def-b8f2-4f77ca123063",
+					"protocol": "https",
+					"host": [
+						"api-qa",
+						"zono",
+						"digital"
+					],
+					"path": [
+						"orgs",
+						"api",
+						"customers",
+						"valid",
+						"b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+					],
+					"query": [
+						{
+							"key": "phone",
+							"value": "0919746461234",
+							"disabled": true
+						},
+						{
+							"key": "includeCFA",
+							"value": "true",
+							"disabled": true
+						},
+						{
+							"key": "distributorCode",
+							"value": "1234",
+							"disabled": true
+						},
+						{
+							"key": "inviteId",
+							"value": "8c91b0f3-a278-4754-8673-305fa4f4bc29",
+							"disabled": true
+						},
+						{
+							"key": "gstin",
+							"value": "XYZ123MNO567",
+							"disabled": true
+						},
+						{
+							"key": "inviteIds[]",
+							"value": "9a9d72ec-9ea7-4def-b8f2-4f77ca123063"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location --globoff 'https://api-qa.zono.digital/orgs/api/customers/valid/8ef5d569-3419-44e5-bb33-3ecfd260f796?phone=0919923432395&includeCFA=true&distributorCode=1715090884389&inviteId=691cfe68-2faa-47fa-a762-ed6603ab6763&gstin=27AAAPZ3324L1ZE&inviteIds[]=691cfe68-2faa-47fa-a762-ed6603ab6763' \\\r\n--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXIiOnsiaWQiOiI0YjkyMTQzMi1iMDI3LTRkYzItYTliNy00OTNkMjMyZTJmNjMifX0sInNlcnZlciI6Inpvbm9hZG1pbiIsImlhdCI6MTczMjUyOTgxNn0.xG-k2S6rQF8fhBFwUwbQEBAoXWh4d_hIhJgJv1kRipU'"
+			},
+			"response": []
+		},
+		{
+			"name": "GET customers/internal/api",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXIiOnsiaWQiOiI0YjkyMTQzMi1iMDI3LTRkYzItYTliNy00OTNkMjMyZTJmNjMifX0sInNlcnZlciI6Inpvbm9hZG1pbiIsImlhdCI6MTczMjUyOTgxNn0.xG-k2S6rQF8fhBFwUwbQEBAoXWh4d_hIhJgJv1kRipU"
+					}
+				],
+				"url": {
+					"raw": "https://api-qa.zono.digital/orgs/api/customers/internal/api?workspaceId=b1a97e4d-f34f-48d5-a466-61e0f7c93f91&inviteId=b15ad59b-6ede-4c2e-8786-b704dc05f21f&phoneNumber=0919785851234",
+					"protocol": "https",
+					"host": [
+						"api-qa",
+						"zono",
+						"digital"
+					],
+					"path": [
+						"orgs",
+						"api",
+						"customers",
+						"internal",
+						"api"
+					],
+					"query": [
+						{
+							"key": "workspaceId",
+							"value": "b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+						},
+						{
+							"key": "inviteId",
+							"value": "b15ad59b-6ede-4c2e-8786-b704dc05f21f"
+						},
+						{
+							"key": "phoneNumber",
+							"value": "0919785851234"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://api-qa.zono.digital/orgs/api/customers/internal/api?workspaceId=6f3c81f1-13a3-4e0f-bfde-a2b71f2636bf&inviteId=03473faf-8393-4531-8f34-f45858a3bad9&phoneNumber=0910000123135' \\\r\n--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXIiOnsiaWQiOiI0YjkyMTQzMi1iMDI3LTRkYzItYTliNy00OTNkMjMyZTJmNjMifX0sInNlcnZlciI6Inpvbm9hZG1pbiIsImlhdCI6MTczMjUyOTgxNn0.xG-k2S6rQF8fhBFwUwbQEBAoXWh4d_hIhJgJv1kRipU'"
+			},
+			"response": []
+		},
+		{
+			"name": "GET /whatsapp-config",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXIiOnsiaWQiOiI0YjkyMTQzMi1iMDI3LTRkYzItYTliNy00OTNkMjMyZTJmNjMifX0sInNlcnZlciI6Inpvbm9hZG1pbiIsImlhdCI6MTczMjcwNzU3M30.MSzJEYaqXCZphbI28KYSmgOoHg6cmKu836bJQCWkLH0"
+					}
+				],
+				"url": {
+					"raw": "https://api-qa.zono.digital/orgs/api/whatsapp-config?includeWorkspaceData=true&workspaceId=abe6f491-df1d-49be-a199-724f466fea0c",
+					"protocol": "https",
+					"host": [
+						"api-qa",
+						"zono",
+						"digital"
+					],
+					"path": [
+						"orgs",
+						"api",
+						"whatsapp-config"
+					],
+					"query": [
+						{
+							"key": "includeWorkspaceData",
+							"value": "true"
+						},
+						{
+							"key": "workspaceId",
+							"value": "abe6f491-df1d-49be-a199-724f466fea0c"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://api-qa.zono.digital/orgs/api/whatsapp-config?includeWorkspaceData=true&workspaceId=abe6f491-df1d-49be-a199-724f466fea0c' \\\r\n--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXIiOnsiaWQiOiI0YjkyMTQzMi1iMDI3LTRkYzItYTliNy00OTNkMjMyZTJmNjMifX0sInNlcnZlciI6Inpvbm9hZG1pbiIsImlhdCI6MTczMjcwNzU3M30.MSzJEYaqXCZphbI28KYSmgOoHg6cmKu836bJQCWkLH0' \\\r\n--data ''"
+			},
+			"response": []
+		},
+		{
+			"name": "POST /whatsapp-config",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXIiOnsiaWQiOiI0YjkyMTQzMi1iMDI3LTRkYzItYTliNy00OTNkMjMyZTJmNjMifX0sInNlcnZlciI6Inpvbm9hZG1pbiIsImlhdCI6MTczMjc3NDQyMX0.fFH8CThaPsmgrgJ9g2-ID6YJXnjMnuDQlnQI6l1APzM"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"workspaceId\": \"01ead06e-86d9-4df3-98b4-cf12bbe60b70\",\r\n  \"whatsappPlatformId\": \"463167580218817\",\r\n  \"whatsappPhoneNoId\": \"551728618013166\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-qa.zono.digital/orgs/api/whatsapp-config",
+					"protocol": "https",
+					"host": [
+						"api-qa",
+						"zono",
+						"digital"
+					],
+					"path": [
+						"orgs",
+						"api",
+						"whatsapp-config"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://api-qa.zono.digital/orgs/api/whatsapp-config' \\\r\n--header 'Content-Type: application/json' \\\r\n--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXIiOnsiaWQiOiI0YjkyMTQzMi1iMDI3LTRkYzItYTliNy00OTNkMjMyZTJmNjMifX0sInNlcnZlciI6Inpvbm9hZG1pbiIsImlhdCI6MTczMjc3NDQyMX0.fFH8CThaPsmgrgJ9g2-ID6YJXnjMnuDQlnQI6l1APzM' \\\r\n--data '{\r\n  \"workspaceId\": \"01ead06e-86d9-4df3-98b4-cf12bbe60b70\",\r\n  \"whatsappPlatformId\": \"463167580218817\",\r\n  \"whatsappPhoneNoId\": \"551728618013166\"\r\n\r\n}'"
+			},
+			"response": []
+		},
+		{
+			"name": "orgs/api/customer/73cf4faf-f746-4d4e-ab56-27b7f883faae?includeInviteDetails=true&sellerWorkspaceId=09650635-c7d6-4a3c-af9b-4187449fb16e",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNzY0NDg1ZGMtM2RmOS00NzhjLTlkMTItNWYzMzY1MTI5MGU0Iiwid29ya3NwYWNlSWQiOiJiMWE5N2U0ZC1mMzRmLTQ4ZDUtYTQ2Ni02MWUwZjdjOTNmOTEiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTczMjg2NTE4MiwiZXhwIjoxNzM1Mjg0MzgyfQ.ipFTCOanbQVlowLOQlrHfBz6N0VqfvslUOYyqxYTxMs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNzY0NDg1ZGMtM2RmOS00NzhjLTlkMTItNWYzMzY1MTI5MGU0Iiwid29ya3NwYWNlSWQiOiJiMWE5N2U0ZC1mMzRmLTQ4ZDUtYTQ2Ni02MWUwZjdjOTNmOTEiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTczMjg2NTE4MiwiZXhwIjoxNzM1Mjg0MzgyfQ.ipFTCOanbQVlowLOQlrHfBz6N0VqfvslUOYyqxYTxMs"
+					}
+				],
+				"url": {
+					"raw": "https://api-qa.zono.digital/hub/orgs/api/customer/aadd582e-7cde-44c5-9386-f9c898965d8c?includeInviteDetails=true&sellerWorkspaceId=b1a97e4d-f34f-48d5-a466-61e0f7c93f91",
+					"protocol": "https",
+					"host": [
+						"api-qa",
+						"zono",
+						"digital"
+					],
+					"path": [
+						"hub",
+						"orgs",
+						"api",
+						"customer",
+						"aadd582e-7cde-44c5-9386-f9c898965d8c"
+					],
+					"query": [
+						{
+							"key": "includeInviteDetails",
+							"value": "true"
+						},
+						{
+							"key": "sellerWorkspaceId",
+							"value": "b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://api-qa.zono.digital/hub/orgs/api/customer/73cf4faf-f746-4d4e-ab56-27b7f883faae?includeInviteDetails=true&sellerWorkspaceId=09650635-c7d6-4a3c-af9b-4187449fb16e' \\\r\n--header 'Content-Type: application/json' \\\r\n--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiOTY1ZjNjYmItYTJlMi00MDI1LWJmOTMtYzJlZjc3OWIzNjkxIiwid29ya3NwYWNlSWQiOiIwOTY1MDYzNS1jN2Q2LTRhM2MtYWY5Yi00MTg3NDQ5ZmIxNmUiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTczMjUzNjU5MywiZXhwIjoxNzM0OTU1NzkzfQ.Dqt6LihyFcEKj-hTfDUbMwGFgDkils_cD-DPXdB6pfA'"
+			},
+			"response": []
+		},
+		{
+			"name": "customers/filters",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiOTY1ZjNjYmItYTJlMi00MDI1LWJmOTMtYzJlZjc3OWIzNjkxIiwid29ya3NwYWNlSWQiOiIwOTY1MDYzNS1jN2Q2LTRhM2MtYWY5Yi00MTg3NDQ5ZmIxNmUiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTczMzk5MTA4MywiZXhwIjoxNzM2NDEwMjgzfQ.HH6x68KKbvgRnfI4xz-PkNTRG01P88nRCjg3qmTBSZY"
+					}
+				],
+				"url": {
+					"raw": "https://api-qa.zono.digital/hub/orgs/api/customers/filters?pageSize=20&pageNo=1&sellerWorkspaceId=09650635-c7d6-4a3c-af9b-4187449fb16e",
+					"protocol": "https",
+					"host": [
+						"api-qa",
+						"zono",
+						"digital"
+					],
+					"path": [
+						"hub",
+						"orgs",
+						"api",
+						"customers",
+						"filters"
+					],
+					"query": [
+						{
+							"key": "pageSize",
+							"value": "20"
+						},
+						{
+							"key": "pageNo",
+							"value": "1"
+						},
+						{
+							"key": "sellerWorkspaceId",
+							"value": "09650635-c7d6-4a3c-af9b-4187449fb16e"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://api-qa.zono.digital/hub/orgs/api/customers/filters?pageSize=20&pageNo=1&sellerWorkspaceId=09650635-c7d6-4a3c-af9b-4187449fb16e' \\--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiOTY1ZjNjYmItYTJlMi00MDI1LWJmOTMtYzJlZjc3OWIzNjkxIiwid29ya3NwYWNlSWQiOiIwOTY1MDYzNS1jN2Q2LTRhM2MtYWY5Yi00MTg3NDQ5ZmIxNmUiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTczMzk5MTA4MywiZXhwIjoxNzM2NDEwMjgzfQ.HH6x68KKbvgRnfI4xz-PkNTRG01P88nRCjg3qmTBSZY'"
+			},
+			"response": []
+		},
+		{
+			"name": "hub/orgs/api/division?",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNzY0NDg1ZGMtM2RmOS00NzhjLTlkMTItNWYzMzY1MTI5MGU0Iiwid29ya3NwYWNlSWQiOiJiMWE5N2U0ZC1mMzRmLTQ4ZDUtYTQ2Ni02MWUwZjdjOTNmOTEiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTczMjg2NTE4MiwiZXhwIjoxNzM1Mjg0MzgyfQ.ipFTCOanbQVlowLOQlrHfBz6N0VqfvslUOYyqxYTxMs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtZXNzYWdlIjoiSDRzSUFBQUFBQUFBLzB5Uno0NmJPaHlGWCtYcXQ0YUkveGxZWFEwek45Y29Oa29Ha3BDcUN3Y01NYkV4ZzBrSlZIMzNLbW9Ycy8rK2M2UnpmZ0tUbEF1SVFOS09DeXBXemIwZnFhU2FDbnJqWGZQdnJQb25zU3FWQkFOcVB1aVJVTWtnQXZ6SCtHZnpOTUFBWGtFRTY4RHpYdnlxTk4ycURrMXYvVkthWVdVN3BsKzdidURiVG1neDc4bnFWelhtbWcwUTFWUm9ab0JRRGUreXVYOG1qNHhLTlhWc0FBTTZOc1YzUFNyNWhSMlVZQkIxZHlFTUdOV05kUkFCbTVQclpWUHlsQ2NvWDVCTk9OS28yL3RsakFKMDYwK0hPQWxYYkU3czBqbk1xTzNYU0lvYmFoVW5TMkdSdDhZK2IvQ0luYjFNUHl5TExOZDJtNGtienRCSWpzV0NsOExHR2ZMeEpyY1FuM2psaEROMXlWUWNpZmc0N3A2bEhCL2ZmZUxrMWptMkpWNzJjcHZ0dlBOYlBoYlp6aUhjY3ZBeG44NXQxYVlaa1duMnpyZHg0bDdjWkNqZDEydmhIRDR1emtPVU13cU9jM0k5Ynl4K09sa2FTWEd0WWhUZ3JGeHcyemdrZS9jd24vajVkSjFRcXg1a3dUWnVHd3N2elZ6dlZyei9MNHRUMmwxMkI2R21iYm9Udy8vMTZ4SVE2L0JaLzlBaVQ0djU4MUZrRDZ6QmdMdG13OS9CTVJnd3FlR21lMW95OVB6eFl0Tnd6YnpLckYydk5yMlh5amVwRndSbVlET3JYcGVoVzRmMlYybXZCTk1RZlFOYVNmais2M2NBQUFELy8vdXdOb3hZQWdBQSIsImV4cCI6MTczMzM4NTQ4NCwiaXNzIjoibXktaXNzdWVyIn0.Jei6uTEkFzvVXzz4yob4zLvrV_RcTisoT83oYDRGq_U",
+						"disabled": true
+					},
+					{
+						"key": "origin",
+						"value": "https://app-qa.zono.digital"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://app-qa.zono.digital/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+					}
+				],
+				"url": {
+					"raw": "https://api-qa.zono.digital/hub/orgs/api/division?sortDirection=DESC&sellerWorkspaceId=b1a97e4d-f34f-48d5-a466-61e0f7c93f91&sortBy=name",
+					"protocol": "https",
+					"host": [
+						"api-qa",
+						"zono",
+						"digital"
+					],
+					"path": [
+						"hub",
+						"orgs",
+						"api",
+						"division"
+					],
+					"query": [
+						{
+							"key": "sortDirection",
+							"value": "DESC"
+						},
+						{
+							"key": "companyCode",
+							"value": "43298701",
+							"disabled": true
+						},
+						{
+							"key": "sellerWorkspaceId",
+							"value": "b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+						},
+						{
+							"key": "includeHeadDivision",
+							"value": "true",
+							"disabled": true
+						},
+						{
+							"key": "divisionCodes",
+							"value": "TCM01",
+							"disabled": true
+						},
+						{
+							"key": "divisionCodes",
+							"value": "PM001",
+							"disabled": true
+						},
+						{
+							"key": "includeInactive",
+							"value": "true",
+							"disabled": true
+						},
+						{
+							"key": "headDivisionId",
+							"value": "84adc57c-0bdd-4cf1-acf3-a7494c7990a8",
+							"disabled": true
+						},
+						{
+							"key": "headDivisionCode",
+							"value": "FM01",
+							"disabled": true
+						},
+						{
+							"key": "pageNo",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "pageSize",
+							"value": "15",
+							"disabled": true
+						},
+						{
+							"key": "sortBy",
+							"value": "name"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://api-qa.zono.digital/hub/orgs/api/division?sortDirection=ASC&companyCode=43298701&sellerWorkspaceId=b1a97e4d-f34f-48d5-a466-61e0f7c93f91&includeHeadDivision=true&divisionCodes=CM02&divisionCodes=CM01&includeInactive=true' \\\r\n--header 'accept: */*' \\\r\n--header 'accept-language: en-US,en;q=0.9' \\\r\n--header 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNzY0NDg1ZGMtM2RmOS00NzhjLTlkMTItNWYzMzY1MTI5MGU0Iiwid29ya3NwYWNlSWQiOiJiMWE5N2U0ZC1mMzRmLTQ4ZDUtYTQ2Ni02MWUwZjdjOTNmOTEiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTczMjg2NTE4MiwiZXhwIjoxNzM1Mjg0MzgyfQ.ipFTCOanbQVlowLOQlrHfBz6N0VqfvslUOYyqxYTxMs' \\\r\n--header 'origin: https://app-qa.zono.digital' \\\r\n--header 'priority: u=1, i' \\\r\n--header 'referer: https://app-qa.zono.digital/' \\\r\n--header 'sec-ch-ua: \"Google Chrome\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\"' \\\r\n--header 'sec-ch-ua-mobile: ?0' \\\r\n--header 'sec-ch-ua-platform: \"Linux\"' \\\r\n--header 'sec-fetch-dest: empty' \\\r\n--header 'sec-fetch-mode: cors' \\\r\n--header 'sec-fetch-site: same-site' \\\r\n--header 'user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36'"
+			},
+			"response": []
+		},
+		{
+			"name": "customer/accept/principalinvite",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "tracestate",
+						"value": "@nr=0-2---1cb130f7308f4580----1733315794790"
+					},
+					{
+						"key": "User-Agent",
+						"value": "okhttp/4.10.0"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiYzdkOTEyNTAtZGM0Zi00MGQxLWFiNDYtMjNjNzkzOGJhNzY5Iiwid29ya3NwYWNlSWQiOiI1ZDAyZGQ2YS1hYjZiLTQ5Y2UtOGRlZC0wYTQzOTA4ZTZkMTQiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTczMzQ3OTEwMywiZXhwIjoxNzM1ODk4MzAzfQ.qCQQ_4ONdVIbIL07Wq5BBdceoQfQLOyGJEI2wjKtzXY"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \"invitedWorkspaceId\": \"5d02dd6a-ab6b-49ce-8ded-0a43908e6d14\",    \"phoneNumber\": \"0919084755849\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-qa.zono.digital/hub/orgs/api/customer/accept/principalinvite/efcf1b47-b73a-46b7-9a15-0037f2179a2e?sellerWorkspaceId=5d02dd6a-ab6b-49ce-8ded-0a43908e6d14",
+					"protocol": "https",
+					"host": [
+						"api-qa",
+						"zono",
+						"digital"
+					],
+					"path": [
+						"hub",
+						"orgs",
+						"api",
+						"customer",
+						"accept",
+						"principalinvite",
+						"efcf1b47-b73a-46b7-9a15-0037f2179a2e"
+					],
+					"query": [
+						{
+							"key": "sellerWorkspaceId",
+							"value": "5d02dd6a-ab6b-49ce-8ded-0a43908e6d14"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location --request PUT 'https://api-qa.zono.digital/hub/orgs/api/customer/accept/principalinvite/efcf1b47-b73a-46b7-9a15-0037f2179a2e?sellerWorkspaceId=5d02dd6a-ab6b-49ce-8ded-0a43908e6d14' \\--header 'tracestate: @nr=0-2---1cb130f7308f4580----1733315794790' \\--header 'User-Agent: okhttp/4.10.0' \\--header 'Content-Type: application/json' \\--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiYzdkOTEyNTAtZGM0Zi00MGQxLWFiNDYtMjNjNzkzOGJhNzY5Iiwid29ya3NwYWNlSWQiOiI1ZDAyZGQ2YS1hYjZiLTQ5Y2UtOGRlZC0wYTQzOTA4ZTZkMTQiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTczMzQ3OTEwMywiZXhwIjoxNzM1ODk4MzAzfQ.qCQQ_4ONdVIbIL07Wq5BBdceoQfQLOyGJEI2wjKtzXY' \\--data '{    \"invitedWorkspaceId\": \"5d02dd6a-ab6b-49ce-8ded-0a43908e6d14\",    \"phoneNumber\": \"0919084755849\"}'"
+			},
+			"response": []
+		},
+		{
+			"name": "cfa",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtZXNzYWdlIjoiSDRzSUFBQUFBQUFBLzB6UlRZK2JQQkRBOGEveWFNNnc0ajBQbktvTjZzbzBOc291Q1NGVkQ4YVlZR0xIS1NZaVVQVzdWMGg3Mk92b04vL0R6Qi9naWdvSkNVejAwaWs2OEZicnhueWI5WDJkdnpDdHdJSldER1lrVkhGSW9QeDAvMzFmb1FFTFJBTUp4RkhZK3F5dWJlcHh6dzRjTDdUck52WnQ1dkYyczRsclA0cmQxWnBYUFI0TUh5QnBxVFRjQXFrdjRsYk05N1U5Y3FyMGRPTURXSERqMC9aaFJxMisyRUZMRHNudElhVUZvNzd5R3lUQTU2eXIzNWpJUllZT0MzS0pRQWJkM2tPMlJSRzYzay9IYlJhLzhEbHptWGVjVVgvZklDV3ZxTmNpTHlyMzNKTytVbWlzaWt4aTRUZzRSZTZ1ekZSZTRMRmFNbm51bVorWGFDSDk5WW5FSkJvdm5xbFBwcW9rOHFQY2kxeWdhZTNndEZySWg5c1RiKy90aXZjT2UzaXN5aXFzMW1aeDhVbTZEODhLUFlrNmlOMDI4MnMvRzVqLzJsWGU4YVAybnBMTktDcm5yRHUvT2VKMGNneFNzbXUyS01JRlcvQ0NBNXhXYzc2ZHhQblVUYWpYVDdKZ2x5elhNRTlSME81ZjhDTW9VVndFWXo0MUVXbkhTK3I5WG5iM0gyOW9QNXZKeDR5bGwrV2dYUkpYWU1IRDhPSHo0QmdzbVBSd05YZktPRnIvNk1SUjZFUithTE5ORTlrQjlabE4yN2kyQS9mL1RSREViZTFHL092U3U1YmNRUElUYUtQZzE5OS9BUUFBLy85dG1ZbFRVQUlBQUE9PSIsImV4cCI6MTczMzM5NjQzOSwiaXNzIjoibXktaXNzdWVyIn0.akqUFwmq7FjLEHiW8Xx7JxCU5HiJDgyGXey0zQ_Zsk4"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api-qa.zono.digital/orgs/api/cfa?sellerWorkspaceId=b1a97e4d-f34f-48d5-a466-61e0f7c93f91&inviteId=17864811-c8a0-424e-a5f4-a430bb7e17e3&isDefault=false",
+					"protocol": "https",
+					"host": [
+						"api-qa",
+						"zono",
+						"digital"
+					],
+					"path": [
+						"orgs",
+						"api",
+						"cfa"
+					],
+					"query": [
+						{
+							"key": "sellerWorkspaceId",
+							"value": "b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+						},
+						{
+							"key": "inviteId",
+							"value": "17864811-c8a0-424e-a5f4-a430bb7e17e3"
+						},
+						{
+							"key": "includeDivisionData",
+							"value": "true",
+							"disabled": true
+						},
+						{
+							"key": "fulfillmentLocationId",
+							"value": "00e7891c-109d-4527-b58c-4170c9ccf87a",
+							"disabled": true
+						},
+						{
+							"key": "fulfillmentLocationCodes",
+							"value": "MSCFA01",
+							"disabled": true
+						},
+						{
+							"key": "isActive",
+							"value": "false",
+							"disabled": true
+						},
+						{
+							"key": "stateIds",
+							"value": "124eccb4-aabd-4336-bba8-9d90628e2136",
+							"disabled": true
+						},
+						{
+							"key": "pinCodes",
+							"value": "500007",
+							"disabled": true
+						},
+						{
+							"key": "searchKey",
+							"value": "Kondapur",
+							"disabled": true
+						},
+						{
+							"key": "disablePagination",
+							"value": "true",
+							"disabled": true
+						},
+						{
+							"key": "pageNo",
+							"value": "2",
+							"disabled": true
+						},
+						{
+							"key": "pageSize",
+							"value": "5",
+							"disabled": true
+						},
+						{
+							"key": "includeDivisionData",
+							"value": "false",
+							"disabled": true
+						},
+						{
+							"key": "searchKey",
+							"value": "800051",
+							"disabled": true
+						},
+						{
+							"key": "searchKey",
+							"value": "1547265894",
+							"disabled": true
+						},
+						{
+							"key": "searchKey",
+							"value": "KARNATAKA",
+							"disabled": true
+						},
+						{
+							"key": "isDefault",
+							"value": "false"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://api-qa.zono.digital/orgs/api/cfa?sellerWorkspaceId=09650635-c7d6-4a3c-af9b-4187449fb16e&inviteId=e653ee14-20ce-4cc9-879a-b030f0f9ff8c&includeDivisionData=true' \\\r\n--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtZXNzYWdlIjoiSDRzSUFBQUFBQUFBLzB6UlRZK2JQQkRBOGEveWFNNnc0ajBQbktvTjZzbzBOc291Q1NGVkQ4YVlZR0xIS1NZaVVQVzdWMGg3Mk92b04vL0R6Qi9naWdvSkNVejAwaWs2OEZicnhueWI5WDJkdnpDdHdJSldER1lrVkhGSW9QeDAvMzFmb1FFTFJBTUp4RkhZK3F5dWJlcHh6dzRjTDdUck52WnQ1dkYyczRsclA0cmQxWnBYUFI0TUh5QnBxVFRjQXFrdjRsYk05N1U5Y3FyMGRPTURXSERqMC9aaFJxMisyRUZMRHNudElhVUZvNzd5R3lUQTU2eXIzNWpJUllZT0MzS0pRQWJkM2tPMlJSRzYzay9IYlJhLzhEbHptWGVjVVgvZklDV3ZxTmNpTHlyMzNKTytVbWlzaWt4aTRUZzRSZTZ1ekZSZTRMRmFNbm51bVorWGFDSDk5WW5FSkJvdm5xbFBwcW9rOHFQY2kxeWdhZTNndEZySWg5c1RiKy90aXZjT2UzaXN5aXFzMW1aeDhVbTZEODhLUFlrNmlOMDI4MnMvRzVqLzJsWGU4YVAybnBMTktDcm5yRHUvT2VKMGNneFNzbXUyS01JRlcvQ0NBNXhXYzc2ZHhQblVUYWpYVDdKZ2x5elhNRTlSME81ZjhDTW9VVndFWXo0MUVXbkhTK3I5WG5iM0gyOW9QNXZKeDR5bGwrV2dYUkpYWU1IRDhPSHo0QmdzbVBSd05YZktPRnIvNk1SUjZFUithTE5ORTlrQjlabE4yN2kyQS9mL1RSREViZTFHL092U3U1YmNRUElUYUtQZzE5OS9BUUFBLy85dG1ZbFRVQUlBQUE9PSIsImV4cCI6MTczMzM5NjQzOSwiaXNzIjoibXktaXNzdWVyIn0.akqUFwmq7FjLEHiW8Xx7JxCU5HiJDgyGXey0zQ_Zsk4' \\\r\n--header 'Content-Type: application/json'"
+			},
+			"response": []
+		},
+		{
+			"name": "customers",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiOTY1ZjNjYmItYTJlMi00MDI1LWJmOTMtYzJlZjc3OWIzNjkxIiwid29ya3NwYWNlSWQiOiIwOTY1MDYzNS1jN2Q2LTRhM2MtYWY5Yi00MTg3NDQ5ZmIxNmUiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTczMzk5MTA4MywiZXhwIjoxNzM2NDEwMjgzfQ.HH6x68KKbvgRnfI4xz-PkNTRG01P88nRCjg3qmTBSZY"
+					}
+				],
+				"url": {
+					"raw": "https://api-qa.zono.digital/hub/orgs/api/customers/09650635-c7d6-4a3c-af9b-4187449fb16e?pageSize=20&pageNo=1&sellerWorkspaceId=09650635-c7d6-4a3c-af9b-4187449fb16e",
+					"protocol": "https",
+					"host": [
+						"api-qa",
+						"zono",
+						"digital"
+					],
+					"path": [
+						"hub",
+						"orgs",
+						"api",
+						"customers",
+						"09650635-c7d6-4a3c-af9b-4187449fb16e"
+					],
+					"query": [
+						{
+							"key": "pageSize",
+							"value": "20"
+						},
+						{
+							"key": "pageNo",
+							"value": "1"
+						},
+						{
+							"key": "sellerWorkspaceId",
+							"value": "09650635-c7d6-4a3c-af9b-4187449fb16e"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://api-qa.zono.digital/hub/orgs/api/customers/09650635-c7d6-4a3c-af9b-4187449fb16e?pageSize=20&pageNo=1&sellerWorkspaceId=09650635-c7d6-4a3c-af9b-4187449fb16e' \\--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiOTY1ZjNjYmItYTJlMi00MDI1LWJmOTMtYzJlZjc3OWIzNjkxIiwid29ya3NwYWNlSWQiOiIwOTY1MDYzNS1jN2Q2LTRhM2MtYWY5Yi00MTg3NDQ5ZmIxNmUiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTczMzk5MTA4MywiZXhwIjoxNzM2NDEwMjgzfQ.HH6x68KKbvgRnfI4xz-PkNTRG01P88nRCjg3qmTBSZY'"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Customer API",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"pm.test(\"Customer Creation - Valid Request\", function () {\r",
+							"    let jsonData = pm.response.json();\r",
+							"    pm.expect(pm.response.code).to.eql(201);\r",
+							"    pm.expect(jsonData).to.have.property(\"customers\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Customer Creation - Missing Required Field\", function () {\r",
+							"    pm.sendRequest({\r",
+							"        url: pm.environment.get(\"base_url\") + \"/hub/orgs/api/customers/create/bulk/b1a97e4d-f34f-48d5-a466-61e0f7c93f91\",\r",
+							"        method: \"POST\",\r",
+							"        header: {\r",
+							"            \"Authorization\": \"Bearer \" + pm.environment.get(\"access_token\"),\r",
+							"            \"Content-Type\": \"application/json\"\r",
+							"        },\r",
+							"        body: {\r",
+							"            mode: \"raw\",\r",
+							"            raw: JSON.stringify({\r",
+							"                \"customers\": [{\r",
+							"                    \"somekey\": \"validate\",\r",
+							"                    \"senderWorkspaceId\": \"b1a97e4d-f34f-48d5-a466-61e0f7c93f91\",\r",
+							"                    \"customerDetails\": {\r",
+							"                        \"name\": \"Aboli Sinha\",\r",
+							"                        \"companyName\": \"Aboli Pharma\",\r",
+							"                        \"telephone\": \"0918555540112\",\r",
+							"                        \"email\": \"sinhaboli@yopmail.com\",\r",
+							"                        \"languageCode\": \"hi\",\r",
+							"                        \"customerCode\": \"AS07096\"\r",
+							"                    }\r",
+							"                }]\r",
+							"            })\r",
+							"        }\r",
+							"    }, function (err, res) {\r",
+							"        pm.test(\"Missing Required Field - Should Return 400\", function () {\r",
+							"            pm.expect(res.status).to.eql(400);\r",
+							"        });\r",
+							"    });\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Customer Creation - Invalid Email\", function () {\r",
+							"    let requestData = {\r",
+							"        \"customers\": [{\r",
+							"            \"phone\": \"0918555540112\",\r",
+							"            \"phone2\": \"0918555540112\",\r",
+							"            \"somekey\": \"validate\",\r",
+							"            \"senderWorkspaceId\": \"b1a97e4d-f34f-48d5-a466-61e0f7c93f91\",\r",
+							"            \"customerDetails\": {\r",
+							"                \"name\": \"Aboli Sinha\",\r",
+							"                \"companyName\": \"Aboli Pharma\",\r",
+							"                \"telephone\": \"0918555540112\",\r",
+							"                \"email\": \"invalid-email\",\r",
+							"                \"languageCode\": \"hi\",\r",
+							"                \"customerCode\": \"AS07096\"\r",
+							"            }\r",
+							"        }]\r",
+							"    };\r",
+							"    \r",
+							"    pm.sendRequest({\r",
+							"        url: pm.environment.get(\"base_url\") + \"/hub/orgs/api/customers/create/bulk/b1a97e4d-f34f-48d5-a466-61e0f7c93f91\",\r",
+							"        method: \"POST\",\r",
+							"        header: {\r",
+							"            \"Authorization\": \"Bearer \" + pm.environment.get(\"access_token\"),\r",
+							"            \"Content-Type\": \"application/json\"\r",
+							"        },\r",
+							"        body: {\r",
+							"            mode: \"raw\",\r",
+							"            raw: JSON.stringify(requestData)\r",
+							"        }\r",
+							"    }, function (err, res) {\r",
+							"        pm.test(\"Invalid Email - Should Return 400\", function () {\r",
+							"            pm.expect(res.status).to.eql(400);\r",
+							"        });\r",
+							"    });\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Customer Creation - Duplicate Customer Code\", function () {\r",
+							"    pm.sendRequest({\r",
+							"        url: pm.environment.get(\"base_url\") + \"/hub/orgs/api/customers/create/bulk/b1a97e4d-f34f-48d5-a466-61e0f7c93f91\",\r",
+							"        method: \"POST\",\r",
+							"        header: {\r",
+							"            \"Authorization\": \"Bearer \" + pm.environment.get(\"access_token\"),\r",
+							"            \"Content-Type\": \"application/json\"\r",
+							"        },\r",
+							"        body: {\r",
+							"            mode: \"raw\",\r",
+							"            raw: JSON.stringify({\r",
+							"                \"customers\": [{\r",
+							"                    \"phone\": \"0918555540112\",\r",
+							"                    \"phone2\": \"0918555540112\",\r",
+							"                    \"somekey\": \"validate\",\r",
+							"                    \"senderWorkspaceId\": \"b1a97e4d-f34f-48d5-a466-61e0f7c93f91\",\r",
+							"                    \"customerDetails\": {\r",
+							"                        \"name\": \"Aboli Sinha\",\r",
+							"                        \"companyName\": \"Aboli Pharma\",\r",
+							"                        \"telephone\": \"0918555540112\",\r",
+							"                        \"email\": \"sinhaboli@yopmail.com\",\r",
+							"                        \"languageCode\": \"hi\",\r",
+							"                        \"customerCode\": \"AS07096\"\r",
+							"                    }\r",
+							"                }]\r",
+							"            })\r",
+							"        }\r",
+							"    }, function (err, res) {\r",
+							"        pm.test(\"Duplicate Customer Code - Should Return 409\", function () {\r",
+							"            pm.expect(res.status).to.eql(409);\r",
+							"        });\r",
+							"    });\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNzY0NDg1ZGMtM2RmOS00NzhjLTlkMTItNWYzMzY1MTI5MGU0Iiwid29ya3NwYWNlSWQiOiJiMWE5N2U0ZC1mMzRmLTQ4ZDUtYTQ2Ni02MWUwZjdjOTNmOTEiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTczNzExMTU5MSwiZXhwIjoxNzM5NTMwNzkxfQ.XW61_D7-M8nRj6Ht4cJrFQzshP-XcnHZXJ4QVgHNcPA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "/"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNzY0NDg1ZGMtM2RmOS00NzhjLTlkMTItNWYzMzY1MTI5MGU0Iiwid29ya3NwYWNlSWQiOiJiMWE5N2U0ZC1mMzRmLTQ4ZDUtYTQ2Ni02MWUwZjdjOTNmOTEiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTczMTg1OTkyMCwiZXhwIjoxNzM0Mjc5MTIwfQ.oA1ZhZmBjhjcnDSuB92ixwPa1OGQaaMgtnXQ7bG0WFM"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://app-qa.zono.digital"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://app-qa.zono.digital/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customers\": [\r\n        {\r\n            \"phone\": \"0918555540112\",\r\n            \"phone2\": \"0918555540112\",\r\n            \"somekey\": \"validate\",\r\n            \"senderWorkspaceId\": \"b1a97e4d-f34f-48d5-a466-61e0f7c93f91\",\r\n            \"customerDetails\": {\r\n                \"name\": \"aboli sinha \",\r\n                \"companyName\": \"aboli PHARMA\",\r\n                \"telephone\": \"0918555540112\",\r\n                \"email\": \"sinhaboli@yopmail.com\",\r\n                \"languageCode\" :\"hi\",\r\n                // \"CSTNumber\": \"LA8756\",\r\n                // \"dlNumber\": \"\",\r\n                // \"dlExpiry\": \"2026-07-27\",\r\n                \"customerCode\": \"AS07096\"\r\n                // \"gstin\": \"ABS456dfvg98HKH\",\r\n                //     \"physicalAddress\": {\r\n                //         \"address1\": \"Mumbai\",\r\n                //         \"address2\": \"Mumbai\"\r\n            }\r\n            //     \"shippingAddress\": {\r\n            //         \"shippingAddress1\": \"Mumbai\",\r\n            //         \"shippingAddress2\": \"Mumbai\",\r\n            //         \"city\": \"Mumbai\",\r\n            //         \"state\": \"MAHARASHTRA\",\r\n            //         \"countryCode\": \"IN\",\r\n            //         \"pincode\": \"400001\"\r\n            //     },\r\n            //     \"postalCode\": \"400001\",\r\n            //     \"stateCode\": \"27\",\r\n            //     \"countryCode\": \"IN\",\r\n            //     \"cityName\": \"Mumbaix\",\r\n            //     \"grossCreditLimit\": 50000,\r\n            //     \"creditLimitPeriod\": 30\r\n            // {\r\n            //     \"phone\": \"0918787654991\",\r\n            //     \"phone2\": \"0918787654991\",\r\n            //     \"somekey\":\"validate\",\r\n            //     \"senderWorkspaceId\": \"b1a97e4d-f34f-48d5-a466-61e0f7c93f91\",\r\n            //     \"customerDetails\": {\r\n            //         \"name\": \"Surynarayan Singh\",\r\n            //         \"companyName\": \"SUNRISE OPTICALS\",\r\n            //         \"telephone\": \"0918787654902\",\r\n            //         \"email\": \"sunrise.opticals02@yopmail.com\",\r\n            //         \"CSTNumber\": \"784749\",\r\n            //         \"dlNumber\": \"737873934\",\r\n            //         \"dlExpiry\": \"2026-07-27\",\r\n            //         \"distributorCode\": \"431745678901\",\r\n            //         \"gstin\": \"ABSCEFGHHK\",\r\n            //         \"physicalAddress\": {\r\n            //             \"address1\": \"Mumbai\",\r\n            //             \"address2\": \"Mumbai\"\r\n            //         },\r\n            //         \"shippingAddress\": {\r\n            //             \"shippingAddress1\": \"Mumbai\",\r\n            //             \"shippingAddress2\": \"Mumbai\",\r\n            //             \"city\": \"Mumbai\",\r\n            //             \"state\": \"MAHARASHTRA\",\r\n            //             \"countryCode\": \"IN\",\r\n            //             \"pincode\": \"400001\"\r\n            //         },\r\n            //         \"postalCode\": \"400001\",\r\n            //         \"stateCode\": \"27\",\r\n            //         \"countryCode\": \"IN\",\r\n            //         \"cityName\": \"Mumbaix\",\r\n            //         \"grossCreditLimit\": 50000,\r\n            //         \"creditLimitPeriod\": 30\r\n            //     },\r\n                // \"cfa\": [\r\n                //     {\r\n                //         \"divisionCodes\": [\r\n                //             {\r\n                //                 \"code\": \"SM01\"\r\n                //             },\r\n                //             {\r\n                //                 \"code\": \"CU01\"\r\n                //             }\r\n                //         ],\r\n                //         \"cfaCode\": \"MSCFA01\",\r\n                //         \"salesOrg\": \"\"\r\n                //     }\r\n                // ]\r\n            }\r\n            // {\r\n            //     \"phone\": \"0918787654999\",\r\n            //     \"phone2\": \"0918787654999\",\r\n            //     \"somekey\":\"validate\",\r\n            //     \"senderWorkspaceId\": \"b1a97e4d-f34f-48d5-a466-61e0f7c93f91\",\r\n            //     \"customerDetails\": {\r\n            //         \"name\": \"Surynarayan Singh\",\r\n            //         \"companyName\": \"SUNRISE OPTICALS\",\r\n            //         \"telephone\": \"0918787654902\",\r\n            //         \"email\": \"sunrise.opticals01@yopmail.com\",\r\n            //         \"CSTNumber\": \"784749\",\r\n            //         \"dlNumber\": \"737873934\",\r\n            //         \"dlExpiry\": \"2026-07-27\",\r\n            //         \"distributorCode\": \"431745678901\",\r\n            //         \"gstin\": \"ABSCEFGHHK\",\r\n            //         \"physicalAddress\": {\r\n            //             \"address1\": \"Mumbai\",\r\n            //             \"address2\": \"Mumbai\"\r\n            //         },\r\n            //         \"shippingAddress\": {\r\n            //             \"shippingAddress1\": \"Mumbai\",\r\n            //             \"shippingAddress2\": \"Mumbai\",\r\n            //             \"city\": \"Mumbai\",\r\n            //             \"state\": \"MAHARASHTRA\",\r\n            //             \"countryCode\": \"IN\",\r\n            //             \"pincode\": \"400001\"\r\n            //         },\r\n            //         \"postalCode\": \"400001\",\r\n            //         \"stateCode\": \"27\",\r\n            //         \"countryCode\": \"IN\",\r\n            //         \"cityName\": \"Mumbaix\",\r\n            //         \"grossCreditLimit\": 50000,\r\n            //         \"creditLimitPeriod\": 30\r\n            // },\r\n            // \"cfa\": [\r\n            //     {\r\n            //         \"divisionCodes\": [\r\n            //             {\r\n            //                 \"code\": \"SM01\"\r\n            //             },\r\n            //             {\r\n            //                 \"code\": \"CU01\"\r\n            //             }\r\n            //         ],\r\n            //         \"cfaCode\": \"MSCFA012222\",\r\n            //         \"salesOrg\": \"\"\r\n            //     }\r\n            // ]\r\n        \r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-qa.zono.digital/hub/orgs/api/customers/create/bulk/b1a97e4d-f34f-48d5-a466-61e0f7c93f91?sellerWorkspaceId=b1a97e4d-f34f-48d5-a466-61e0f7c93f91",
+					"protocol": "https",
+					"host": [
+						"api-qa",
+						"zono",
+						"digital"
+					],
+					"path": [
+						"hub",
+						"orgs",
+						"api",
+						"customers",
+						"create",
+						"bulk",
+						"b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+					],
+					"query": [
+						{
+							"key": "sellerWorkspaceId",
+							"value": "b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://api-qa.zono.digital/hub/orgs/api/customers/create/bulk/b1a97e4d-f34f-48d5-a466-61e0f7c93f91?sellerWorkspaceId=b1a97e4d-f34f-48d5-a466-61e0f7c93f91' \\\r\n\r\n--header 'accept: /' \\\r\n\r\n--header 'accept-language: en-US,en;q=0.9' \\\r\n\r\n--header 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNzY0NDg1ZGMtM2RmOS00NzhjLTlkMTItNWYzMzY1MTI5MGU0Iiwid29ya3NwYWNlSWQiOiJiMWE5N2U0ZC1mMzRmLTQ4ZDUtYTQ2Ni02MWUwZjdjOTNmOTEiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyMjU5NTk2MSwiZXhwIjoxNzI1MDE1MTYxfQ.dW3veVe1I4DowVnos8SK2cGlzAJlMRJBQX-1vZdVK4w' \\\r\n\r\n--header 'content-type: application/json' \\\r\n\r\n--header 'origin: https://app-qa.zono.digital' \\\r\n\r\n--header 'priority: u=1, i' \\\r\n\r\n--header 'referer: https://app-qa.zono.digital/' \\\r\n\r\n--header 'sec-ch-ua: \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\"' \\\r\n\r\n--header 'sec-ch-ua-mobile: ?0' \\\r\n\r\n--header 'sec-ch-ua-platform: \"Windows\"' \\\r\n\r\n--header 'sec-fetch-dest: empty' \\\r\n\r\n--header 'sec-fetch-mode: cors' \\\r\n\r\n--header 'sec-fetch-site: same-site' \\\r\n\r\n--header 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36' \\\r\n\r\n--data-raw '{\r\n\r\n    \"customers\": [ {\r\n\r\n            \"phone\": \"0918787654911\",\r\n\r\n            \"phone2\": \"0918787654911\",\r\n\r\n            \"somekey\":\"validate\",\r\n\r\n            \"senderWorkspaceId\": \"b1a97e4d-f34f-48d5-a466-61e0f7c93f91\",\r\n\r\n            \"customerDetails\": {\r\n\r\n                \"name\": \"Surynarayan Singh\",\r\n\r\n                \"companyName\": \"SUNRISE OPTICALS\",\r\n\r\n                \"telephone\": \"0918787654902\",\r\n\r\n                \"email\": \"sunrise.opticals03@yopmail.com\",\r\n\r\n                \"CSTNumber\": \"784749\",\r\n\r\n                \"dlNumber\": \"737873934\",\r\n\r\n                \"dlExpiry\": \"2026-07-27\",\r\n\r\n                \"distributorCode\": \"431745678902\",\r\n\r\n                \"gstin\": \"ABSCEFGHHKH\",\r\n\r\n                \"physicalAddress\": {\r\n\r\n                    \"address1\": \"Mumbai\",\r\n\r\n                    \"address2\": \"Mumbai\"\r\n\r\n                },\r\n\r\n                \"shippingAddress\": {\r\n\r\n                    \"shippingAddress1\": \"Mumbai\",\r\n\r\n                    \"shippingAddress2\": \"Mumbai\",\r\n\r\n                    \"city\": \"Mumbai\",\r\n\r\n                    \"state\": \"MAHARASHTRA\",\r\n\r\n                    \"countryCode\": \"IN\",\r\n\r\n                    \"pincode\": \"400001\"\r\n\r\n                },\r\n\r\n                \"postalCode\": \"400001\",\r\n\r\n                \"stateCode\": \"27\",\r\n\r\n                \"countryCode\": \"IN\",\r\n\r\n                \"cityName\": \"Mumbaix\",\r\n\r\n                \"grossCreditLimit\": 50000,\r\n\r\n                \"creditLimitPeriod\": 30\r\n\r\n            }\r\n\r\n    },\r\n\r\n        {\r\n\r\n            \"phone\": \"0918787654991\",\r\n\r\n            \"phone2\": \"0918787654991\",\r\n\r\n            \"somekey\":\"validate\",\r\n\r\n            \"senderWorkspaceId\": \"b1a97e4d-f34f-48d5-a466-61e0f7c93f91\",\r\n\r\n            \"customerDetails\": {\r\n\r\n                \"name\": \"Surynarayan Singh\",\r\n\r\n                \"companyName\": \"SUNRISE OPTICALS\",\r\n\r\n                \"telephone\": \"0918787654902\",\r\n\r\n                \"email\": \"sunrise.opticals02@yopmail.com\",\r\n\r\n                \"CSTNumber\": \"784749\",\r\n\r\n                \"dlNumber\": \"737873934\",\r\n\r\n                \"dlExpiry\": \"2026-07-27\",\r\n\r\n                \"distributorCode\": \"431745678901\",\r\n\r\n                \"gstin\": \"ABSCEFGHHK\",\r\n\r\n                \"physicalAddress\": {\r\n\r\n                    \"address1\": \"Mumbai\",\r\n\r\n                    \"address2\": \"Mumbai\"\r\n\r\n                },\r\n\r\n                \"shippingAddress\": {\r\n\r\n                    \"shippingAddress1\": \"Mumbai\",\r\n\r\n                    \"shippingAddress2\": \"Mumbai\",\r\n\r\n                    \"city\": \"Mumbai\",\r\n\r\n                    \"state\": \"MAHARASHTRA\",\r\n\r\n                    \"countryCode\": \"IN\",\r\n\r\n                    \"pincode\": \"400001\"\r\n\r\n                },\r\n\r\n                \"postalCode\": \"400001\",\r\n\r\n                \"stateCode\": \"27\",\r\n\r\n                \"countryCode\": \"IN\",\r\n\r\n                \"cityName\": \"Mumbaix\",\r\n\r\n                \"grossCreditLimit\": 50000,\r\n\r\n                \"creditLimitPeriod\": 30\r\n\r\n            },\r\n\r\n            \"cfa\": [\r\n\r\n                {\r\n\r\n                    \"divisionCodes\": [\r\n\r\n                        {\r\n\r\n                            \"code\": \"SM01\"\r\n\r\n                        },\r\n\r\n                        {\r\n\r\n                            \"code\": \"CU01\"\r\n\r\n                        }\r\n\r\n                    ],\r\n\r\n                    \"cfaCode\": \"MSCFA01\",\r\n\r\n                    \"salesOrg\": \"\"\r\n\r\n                }\r\n\r\n            ]\r\n\r\n        },{\r\n\r\n            \"phone\": \"0918787654999\",\r\n\r\n            \"phone2\": \"0918787654999\",\r\n\r\n            \"somekey\":\"validate\",\r\n\r\n            \"senderWorkspaceId\": \"b1a97e4d-f34f-48d5-a466-61e0f7c93f91\",\r\n\r\n            \"customerDetails\": {\r\n\r\n                \"name\": \"Surynarayan Singh\",\r\n\r\n                \"companyName\": \"SUNRISE OPTICALS\",\r\n\r\n                \"telephone\": \"0918787654902\",\r\n\r\n                \"email\": \"sunrise.opticals01@yopmail.com\",\r\n\r\n                \"CSTNumber\": \"784749\",\r\n\r\n                \"dlNumber\": \"737873934\",\r\n\r\n                \"dlExpiry\": \"2026-07-27\",\r\n\r\n                \"distributorCode\": \"431745678901\",\r\n\r\n                \"gstin\": \"ABSCEFGHHK\",\r\n\r\n                \"physicalAddress\": {\r\n\r\n                    \"address1\": \"Mumbai\",\r\n\r\n                    \"address2\": \"Mumbai\"\r\n\r\n                },\r\n\r\n                \"shippingAddress\": {\r\n\r\n                    \"shippingAddress1\": \"Mumbai\",\r\n\r\n                    \"shippingAddress2\": \"Mumbai\",\r\n\r\n                    \"city\": \"Mumbai\",\r\n\r\n                    \"state\": \"MAHARASHTRA\",\r\n\r\n                    \"countryCode\": \"IN\",\r\n\r\n                    \"pincode\": \"400001\"\r\n\r\n                },\r\n\r\n                \"postalCode\": \"400001\",\r\n\r\n                \"stateCode\": \"27\",\r\n\r\n                \"countryCode\": \"IN\",\r\n\r\n                \"cityName\": \"Mumbaix\",\r\n\r\n                \"grossCreditLimit\": 50000,\r\n\r\n                \"creditLimitPeriod\": 30\r\n\r\n            },\r\n\r\n            \"cfa\": [\r\n\r\n                {\r\n\r\n                    \"divisionCodes\": [\r\n\r\n                        {\r\n\r\n                            \"code\": \"SM01\"\r\n\r\n                        },\r\n\r\n                        {\r\n\r\n                            \"code\": \"CU01\"\r\n\r\n                        }\r\n\r\n                    ],\r\n\r\n                    \"cfaCode\": \"MSCFA012222\",\r\n\r\n                    \"salesOrg\": \"\"\r\n\r\n                }\r\n\r\n            ]\r\n\r\n        }\r\n\r\n    ]\r\n\r\n}'"
+			},
+			"response": [
+				{
+					"name": "Create Customer API",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "/"
+							},
+							{
+								"key": "accept-language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNzY0NDg1ZGMtM2RmOS00NzhjLTlkMTItNWYzMzY1MTI5MGU0Iiwid29ya3NwYWNlSWQiOiJiMWE5N2U0ZC1mMzRmLTQ4ZDUtYTQ2Ni02MWUwZjdjOTNmOTEiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyMjU5NTk2MSwiZXhwIjoxNzI1MDE1MTYxfQ.dW3veVe1I4DowVnos8SK2cGlzAJlMRJBQX-1vZdVK4w"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json"
+							},
+							{
+								"key": "origin",
+								"value": "https://app-qa.zono.digital"
+							},
+							{
+								"key": "priority",
+								"value": "u=1, i"
+							},
+							{
+								"key": "referer",
+								"value": "https://app-qa.zono.digital/"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-site"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customers\": [\r\n        {\r\n            \"phone\": \"0911234560072\",\r\n            // \"phone2\": \"0911234569873\",\r\n            // \"somekey\": \"validate\",\r\n            // \"senderWorkspaceId\": \"b1a97e4d-f34f-48d5-a466-61e0f7c93f91\",\r\n            \"customerDetails\": {\r\n                \"name\": \"Sanika pandagale\",\r\n                \"companyName\": \"pandagale Agency\",\r\n                //  \"telephone\": \"0911234569872\",\r\n                // \"email\": \"sneha.agency@yopmail.com\",\r\n                // \"CSTNumber\": \"9885\",\r\n                // \"dlNumber\": \"793485\",\r\n                // \"dlExpiry\": \"2035-07-27\",\r\n                // \"distributorCode\": \"PK2035\",\r\n                \"gstin\": \"ABCDE9987F1V7\"\r\n                // \"physicalAddress\": {\r\n                //     \"address1\": \"Nanded\",\r\n                //     \"address2\": \"Nanded\"\r\n                }\r\n                // \"shippingAddress\": {\r\n                //     \"shippingAddress1\": \"Nanded\",\r\n                //     \"shippingAddress2\": \"Nanded\",\r\n                //     \"city\": \"Nanded\",\r\n                //     \"state\": \"Maharashtra\",\r\n                //     \"countryCode\": \"IN\",\r\n                //     \"pincode\": \"400430\"\r\n                // },\r\n                // \"postalCode\": \"400430\",\r\n                // \"stateCode\": \"26\",\r\n                // \"countryCode\": \"IN\",\r\n                // \"cityName\": \"Nanded\",\r\n                // \"grossCreditLimit\": 50000,\r\n            //     \"creditLimitPeriod\": 30\r\n            }\r\n        \r\n        // {\r\n//             \"phone\": \"0911234569872\",\r\n//             \"phone2\": \"0911234569873\",\r\n//             \"somekey\": \"validate\",\r\n//             \"senderWorkspaceId\": \"b1a97e4d-f34f-48d5-a466-61e0f7c93f91\",\r\n//             \"customerDetails\": {\r\n//                 \"name\": \"Sneha hake\",\r\n//                 \"companyName\": \"Sneha Agency\",\r\n//                 \"telephone\": \"0911234569872\",\r\n//                 \"email\": \"sneha.agency@yopmail.com\",\r\n//                 \"CSTNumber\": \"9885\",\r\n//                 \"dlNumber\": \"793485\",\r\n//                 \"dlExpiry\": \"2035-07-27\",\r\n//                 \"distributorCode\": \"PK2035\",\r\n//                 \"gstin\": \"ABCDE9999F1V7\",\r\n//                 \"physicalAddress\": {\r\n//                     \"address1\": \"Nanded\",\r\n//                     \"address2\": \"Nanded\"\r\n//                 },\r\n//                 \"shippingAddress\": {\r\n//                     \"shippingAddress1\": \"Nanded\",\r\n//                     \"shippingAddress2\": \"Nanded\",\r\n//                     \"city\": \"Nanded\",\r\n//                     \"state\": \"Maharashtra\",\r\n//                     \"countryCode\": \"IN\",\r\n//                     \"pincode\": \"400430\"\r\n//                 },\r\n//                 \"postalCode\": \"400430\",\r\n//                 \"stateCode\": \"26\",\r\n//                 \"countryCode\": \"IN\",\r\n//                 \"cityName\": \"Nanded\",\r\n//                 \"grossCreditLimit\": 50000,\r\n//                 \"creditLimitPeriod\": 30\r\n//             },\r\n//             \"cfa\": [\r\n//                 {\r\n//                     \"divisionCodes\": [\r\n//                         {\r\n//                             \"code\": \"SBM01\"\r\n//                         },\r\n//                         {\r\n//                             \"code\": \"SBM01\"\r\n//                         }\r\n//                     ],\r\n//                     \"cfaCode\": \"MSCFA008\",\r\n//                     \"salesOrg\": \"\"\r\n//                 }\r\n//             ]\r\n//         },\r\n//         {\r\n//             \"phone\": \"0911234569872\",\r\n//             \"phone2\": \"0911234569873\",\r\n//             \"somekey\": \"validate\",\r\n//             \"senderWorkspaceId\": \"b1a97e4d-f34f-48d5-a466-61e0f7c93f91\",\r\n//             \"customerDetails\": {\r\n//                 \"name\": \"Sneha hake \",\r\n//                 \"companyName\": \"Sneha Agency\",\r\n//                 \"telephone\": \"0911234569872\",\r\n//                 \"email\": \"sneha.agency@yopmail.com\",\r\n//                 \"CSTNumber\": \"9885\",\r\n//                 \"dlNumber\": \"793485\",\r\n//                 \"dlExpiry\": \"2035-07-27\",\r\n//                 \"distributorCode\": \"PK2035\",\r\n//                 \"gstin\": \"ABCDE9999F1V7\",\r\n//                 \"physicalAddress\": {\r\n//                     \"address1\": \"Nanded\",\r\n//                     \"address2\": \"Nanded\"\r\n//                 },\r\n//                 \"shippingAddress\": {\r\n//                     \"shippingAddress1\": \"Nanded\",\r\n//                     \"shippingAddress2\": \"Nanded\",\r\n//                     \"city\": \"nanded\",\r\n//                     \"state\": \"Maharashtra\",\r\n//                     \"countryCode\": \"IN\",\r\n//                     \"pincode\": \"400430\"\r\n//                 },\r\n//                 \"postalCode\": \"400430\",\r\n//                 \"stateCode\": \"26\",\r\n//                 \"countryCode\": \"IN\",\r\n//                 \"cityName\": \"Nanded\",\r\n//                 \"grossCreditLimit\": 50000,\r\n//                 \"creditLimitPeriod\": 30\r\n//             },\r\n//             \"cfa\": [\r\n//                 {\r\n//                     \"divisionCodes\": [\r\n//                         {\r\n//                             \"code\": \"SBM01\"\r\n//                         },\r\n//                         {\r\n//                             \"code\": \"SBM01\"\r\n//                         }\r\n//                     ],\r\n//                     \"cfaCode\": \"MSCFA008\",\r\n//                     \"salesOrg\": \"\"\r\n//                 }\r\n//             ]\r\n//         }\r\n    ]\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api-qa.zono.digital/hub/orgs/api/customers/create/bulk/b1a97e4d-f34f-48d5-a466-61e0f7c93f91?sellerWorkspaceId=b1a97e4d-f34f-48d5-a466-61e0f7c93f91",
+							"protocol": "https",
+							"host": [
+								"api-qa",
+								"zono",
+								"digital"
+							],
+							"path": [
+								"hub",
+								"orgs",
+								"api",
+								"customers",
+								"create",
+								"bulk",
+								"b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+							],
+							"query": [
+								{
+									"key": "sellerWorkspaceId",
+									"value": "b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 05 Sep 2024 05:23:35 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "764"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "script-src 'strict-dynamic' 'nonce-rAnd0m123' 'unsafe-inline' http: https:; object-src 'none'; base-uri 'none'; require-trusted-types-for 'script'; report-uri https://csp.example.com;"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"2fc-MbQ44vPnAEzDKbAiXCYcftTSOx8\""
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "X-Krakend",
+							"value": "Version 2.5.0"
+						},
+						{
+							"key": "X-Krakend-Completed",
+							"value": "false"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"customersCreated\": 0,\n    \"customersUpdated\": 0,\n    \"statusCode\": 200,\n    \"message\": \"0 operations successful, 2 operations failed\",\n    \"errorCount\": 2,\n    \"errors\": [\n        {\n            \"phone\": \"0911234560072\",\n            \"customerDetails\": {\n                \"name\": \"Sanika pandagale\",\n                \"companyName\": \"pandagale Agency\",\n                \"gstin\": \"ABCDE9987F1V7\"\n            }\n        },\n        {\n            \"field\": \"customerDetails\",\n            \"message\": \"Validation failed for customerDetails\",\n            \"nestedErrors\": [\n                {\n                    \"field\": \"customerDetails.emailOrPhonePresent\",\n                    \"message\": \"Either email or phone must be provided\"\n                },\n                {\n                    \"field\": \"customerDetails.distributorCode\",\n                    \"message\": \"distributorCode must be longer than or equal to 1 characters\"\n                },\n                {\n                    \"field\": \"customerDetails.distributorCode\",\n                    \"message\": \"distributorCode should not be empty\"\n                },\n                {\n                    \"field\": \"customerDetails.distributorCode\",\n                    \"message\": \"distributorCode must be a string\"\n                }\n            ]\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Visit ",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNzY0NDg1ZGMtM2RmOS00NzhjLTlkMTItNWYzMzY1MTI5MGU0Iiwid29ya3NwYWNlSWQiOiJiMWE5N2U0ZC1mMzRmLTQ4ZDUtYTQ2Ni02MWUwZjdjOTNmOTEiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyOTQ4Njk0NywiZXhwIjoxNzMxOTA2MTQ3fQ.JgV-IL-3b_E4nFEu84jq9bzfWUmtxGQ7c61msNuy8KU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNzY0NDg1ZGMtM2RmOS00NzhjLTlkMTItNWYzMzY1MTI5MGU0Iiwid29ya3NwYWNlSWQiOiJiMWE5N2U0ZC1mMzRmLTQ4ZDUtYTQ2Ni02MWUwZjdjOTNmOTEiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyNjg0MzkwNSwiZXhwIjoxNzI5MjYzMTA1fQ.UCHW_-oLTA7BbGWUYQu1dLUTvGYFViCZQVd2VW_CQuM"
+					}
+				],
+				"url": {
+					"raw": "https://api-qa.zono.digital/hub/orgs/api/visit/b1a97e4d-f34f-48d5-a466-61e0f7c93f91?startDate=2024-08-01&endDate=2024-10-10&sellerWorkspaceId=b1a97e4d-f34f-48d5-a466-61e0f7c93f91",
+					"protocol": "https",
+					"host": [
+						"api-qa",
+						"zono",
+						"digital"
+					],
+					"path": [
+						"hub",
+						"orgs",
+						"api",
+						"visit",
+						"b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2024-08-01"
+						},
+						{
+							"key": "endDate",
+							"value": "2024-10-10"
+						},
+						{
+							"key": "teamMemberId",
+							"value": "33402227-54a1-46b9-b833-409595777fe3",
+							"disabled": true
+						},
+						{
+							"key": "sellerWorkspaceId",
+							"value": "b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://api-qa.zono.digital/hub/orgs/api/visit/6f3c81f1-13a3-4e0f-bfde-a2b71f2636bf?startDate=2024-08-15&endDate=2024-10-15&teamMemberId=b3c62d2f-2420-4e87-b0e5-47d5daafc057&sellerWorkspaceId=6f3c81f1-13a3-4e0f-bfde-a2b71f2636bf' \\--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNGI5MjE0MzItYjAyNy00ZGMyLWE5YjctNDkzZDIzMmUyZjYzIiwid29ya3NwYWNlSWQiOiI2ZjNjODFmMS0xM2EzLTRlMGYtYmZkZS1hMmI3MWYyNjM2YmYiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyNzMyOTE4MiwiZXhwIjoxNzI5NzQ4MzgyfQ.OhHCt7U1C-TnoixADHQzspYmENIy3GkBNLuHvtcjyD8'"
+			},
+			"response": []
+		},
+		{
+			"name": "Visit API",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNzY0NDg1ZGMtM2RmOS00NzhjLTlkMTItNWYzMzY1MTI5MGU0Iiwid29ya3NwYWNlSWQiOiJiMWE5N2U0ZC1mMzRmLTQ4ZDUtYTQ2Ni02MWUwZjdjOTNmOTEiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyNjg0MzkwNSwiZXhwIjoxNzI5MjYzMTA1fQ.UCHW_-oLTA7BbGWUYQu1dLUTvGYFViCZQVd2VW_CQuM"
+					}
+				],
+				"url": {
+					"raw": "https://api-qa.zono.digital/hub/orgs/api/visit/b1a97e4d-f34f-48d5-a466-61e0f7c93f91?startDate=2024-09-15&endDate=2024-10-15&teamMemberId=4bce356e-27c5-49d6-83ac-345299bc7e47&sellerWorkspaceId=b1a97e4d-f34f-48d5-a466-61e0f7c93f91",
+					"protocol": "https",
+					"host": [
+						"api-qa",
+						"zono",
+						"digital"
+					],
+					"path": [
+						"hub",
+						"orgs",
+						"api",
+						"visit",
+						"b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2024-09-15"
+						},
+						{
+							"key": "endDate",
+							"value": "2024-10-15"
+						},
+						{
+							"key": "teamMemberId",
+							"value": "4bce356e-27c5-49d6-83ac-345299bc7e47"
+						},
+						{
+							"key": "sellerWorkspaceId",
+							"value": "b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://api-qa.zono.digital/hub/orgs/api/visit/6f3c81f1-13a3-4e0f-bfde-a2b71f2636bf?startDate=2024-08-15&endDate=2024-10-15&teamMemberId=b3c62d2f-2420-4e87-b0e5-47d5daafc057&sellerWorkspaceId=6f3c81f1-13a3-4e0f-bfde-a2b71f2636bf' \\--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNGI5MjE0MzItYjAyNy00ZGMyLWE5YjctNDkzZDIzMmUyZjYzIiwid29ya3NwYWNlSWQiOiI2ZjNjODFmMS0xM2EzLTRlMGYtYmZkZS1hMmI3MWYyNjM2YmYiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyNzMyOTE4MiwiZXhwIjoxNzI5NzQ4MzgyfQ.OhHCt7U1C-TnoixADHQzspYmENIy3GkBNLuHvtcjyD8'"
+			},
+			"response": []
+		},
+		{
+			"name": "assign division to teamMember",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNzY0NDg1ZGMtM2RmOS00NzhjLTlkMTItNWYzMzY1MTI5MGU0Iiwid29ya3NwYWNlSWQiOiJiMWE5N2U0ZC1mMzRmLTQ4ZDUtYTQ2Ni02MWUwZjdjOTNmOTEiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyOTQ4Njk0NywiZXhwIjoxNzMxOTA2MTQ3fQ.JgV-IL-3b_E4nFEu84jq9bzfWUmtxGQ7c61msNuy8KU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiOTY1ZjNjYmItYTJlMi00MDI1LWJmOTMtYzJlZjc3OWIzNjkxIiwid29ya3NwYWNlSWQiOiIwOTY1MDYzNS1jN2Q2LTRhM2MtYWY5Yi00MTg3NDQ5ZmIxNmUiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyOTA3MjM4NCwiZXhwIjoxNzMxNDkxNTg0fQ.GIo8xiUDsWheJ7DalJ7CgYtrMHeWUtYspNcWPRzgt4A"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"teamMemberId\": \"9725575c-d34b-48c7-81dc-31ed37e400c2\",\r\n    \"divisionIds\": [\r\n        \"9f25930c-67ce-4f46-9353-b80492fb1164\",\r\n        \"a2d72da1-fb49-41cc-a4df-d6b2092cea4c\"\r\n    ],\r\n    \"isActive\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-qa.zono.digital/hub/orgs/api/division/team-member/add/b1a97e4d-f34f-48d5-a466-61e0f7c93f91?sellerWorkspaceId=b1a97e4d-f34f-48d5-a466-61e0f7c93f91",
+					"protocol": "https",
+					"host": [
+						"api-qa",
+						"zono",
+						"digital"
+					],
+					"path": [
+						"hub",
+						"orgs",
+						"api",
+						"division",
+						"team-member",
+						"add",
+						"b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+					],
+					"query": [
+						{
+							"key": "sellerWorkspaceId",
+							"value": "b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://api-qa.zono.digital/hub/orgs/api/division/team-member/add/09650635-c7d6-4a3c-af9b-4187449fb16e?sellerWorkspaceId=09650635-c7d6-4a3c-af9b-4187449fb16e' \\\r\n--header 'Content-Type: application/json' \\\r\n--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiOTY1ZjNjYmItYTJlMi00MDI1LWJmOTMtYzJlZjc3OWIzNjkxIiwid29ya3NwYWNlSWQiOiIwOTY1MDYzNS1jN2Q2LTRhM2MtYWY5Yi00MTg3NDQ5ZmIxNmUiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyOTA3MjM4NCwiZXhwIjoxNzMxNDkxNTg0fQ.GIo8xiUDsWheJ7DalJ7CgYtrMHeWUtYspNcWPRzgt4A' \\\r\n--data '{\r\n\r\n  \"teamMemberId\": \"a32b5e69-c902-47db-8cbc-dc0391931376\",\r\n  \"divisionIds\": [\"2d14c792-b405-4684-ab30-8866d205c99f\",\"20b3b7b9-2067-48e7-9d28-e752de7860ed\"],\r\n  \"isActive\": true\r\n}'"
+			},
+			"response": []
+		},
+		{
+			"name": "Team List",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNzY0NDg1ZGMtM2RmOS00NzhjLTlkMTItNWYzMzY1MTI5MGU0Iiwid29ya3NwYWNlSWQiOiJiMWE5N2U0ZC1mMzRmLTQ4ZDUtYTQ2Ni02MWUwZjdjOTNmOTEiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyOTQ4Njk0NywiZXhwIjoxNzMxOTA2MTQ3fQ.JgV-IL-3b_E4nFEu84jq9bzfWUmtxGQ7c61msNuy8KU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiOTY1ZjNjYmItYTJlMi00MDI1LWJmOTMtYzJlZjc3OWIzNjkxIiwid29ya3NwYWNlSWQiOiIwOTY1MDYzNS1jN2Q2LTRhM2MtYWY5Yi00MTg3NDQ5ZmIxNmUiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyOTE0OTc4MCwiZXhwIjoxNzMxNTY4OTgwfQ.PyuHGnnRgwZ-1qGW1fpSt-KTqX_ajniB3OITMDqgq0Q"
+					}
+				],
+				"url": {
+					"raw": "https://api-qa.zono.digital/hub/orgs/api/team/list/b1a97e4d-f34f-48d5-a466-61e0f7c93f91?includeTeamCustomersMapping=true&includePendingInvites=true&sellerWorkspaceId=b1a97e4d-f34f-48d5-a466-61e0f7c93f91",
+					"protocol": "https",
+					"host": [
+						"api-qa",
+						"zono",
+						"digital"
+					],
+					"path": [
+						"hub",
+						"orgs",
+						"api",
+						"team",
+						"list",
+						"b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+					],
+					"query": [
+						{
+							"key": "includeTeamCustomersMapping",
+							"value": "true"
+						},
+						{
+							"key": "includePendingInvites",
+							"value": "true"
+						},
+						{
+							"key": "sellerWorkspaceId",
+							"value": "b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+						},
+						{
+							"key": "searchKey",
+							"value": "0918888877777",
+							"disabled": true
+						},
+						{
+							"key": "searchKey",
+							"value": "rucha",
+							"disabled": true
+						},
+						{
+							"key": "isActive",
+							"value": "false",
+							"disabled": true
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://api-qa.zono.digital/hub/orgs/api/team/list/09650635-c7d6-4a3c-af9b-4187449fb16e?includeTeamCustomersMapping=true&includePendingInvites=true&sellerWorkspaceId=09650635-c7d6-4a3c-af9b-4187449fb16e' \\--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiOTY1ZjNjYmItYTJlMi00MDI1LWJmOTMtYzJlZjc3OWIzNjkxIiwid29ya3NwYWNlSWQiOiIwOTY1MDYzNS1jN2Q2LTRhM2MtYWY5Yi00MTg3NDQ5ZmIxNmUiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyOTE0OTc4MCwiZXhwIjoxNzMxNTY4OTgwfQ.PyuHGnnRgwZ-1qGW1fpSt-KTqX_ajniB3OITMDqgq0Q'"
+			},
+			"response": []
+		},
+		{
+			"name": "assign customer to team member",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNzY0NDg1ZGMtM2RmOS00NzhjLTlkMTItNWYzMzY1MTI5MGU0Iiwid29ya3NwYWNlSWQiOiJiMWE5N2U0ZC1mMzRmLTQ4ZDUtYTQ2Ni02MWUwZjdjOTNmOTEiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyOTQ4Njk0NywiZXhwIjoxNzMxOTA2MTQ3fQ.JgV-IL-3b_E4nFEu84jq9bzfWUmtxGQ7c61msNuy8KU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\""
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "Referer",
+						"value": "https://app-qa.zono.digital/"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNzY0NDg1ZGMtM2RmOS00NzhjLTlkMTItNWYzMzY1MTI5MGU0Iiwid29ya3NwYWNlSWQiOiJiMWE5N2U0ZC1mMzRmLTQ4ZDUtYTQ2Ni02MWUwZjdjOTNmOTEiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyOTQ4Njk0NywiZXhwIjoxNzMxOTA2MTQ3fQ.JgV-IL-3b_E4nFEu84jq9bzfWUmtxGQ7c61msNuy8KU"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerIds\": [\r\n        \"73cf4faf-f746-4d4e-ab56-27b7f883faae\"\r\n    ],\r\n    \"teamMemberIds\": [\r\n        \"9725575c-d34b-48c7-81dc-31ed37e400c2\"\r\n    ]   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-qa.zono.digital/hub/orgs/api/team-member/customer/b1a97e4d-f34f-48d5-a466-61e0f7c93f91?sellerWorkspaceId=b1a97e4d-f34f-48d5-a466-61e0f7c93f91",
+					"protocol": "https",
+					"host": [
+						"api-qa",
+						"zono",
+						"digital"
+					],
+					"path": [
+						"hub",
+						"orgs",
+						"api",
+						"team-member",
+						"customer",
+						"b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+					],
+					"query": [
+						{
+							"key": "sellerWorkspaceId",
+							"value": "b1a97e4d-f34f-48d5-a466-61e0f7c93f91"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://api-qa.zono.digital/hub/orgs/api/team-member/customer/6f3c81f1-13a3-4e0f-bfde-a2b71f2636bf?sellerWorkSpaceId=6f3c81f1-13a3-4e0f-bfde-a2b71f2636bf' \\\r\n--header 'sec-ch-ua: \"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"' \\\r\n--header 'content-type: application/json' \\\r\n--header 'Referer: https://app-qa.zono.digital/' \\\r\n--header 'sec-ch-ua-mobile: ?0' \\\r\n--header 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNGI5MjE0MzItYjAyNy00ZGMyLWE5YjctNDkzZDIzMmUyZjYzIiwid29ya3NwYWNlSWQiOiI2ZjNjODFmMS0xM2EzLTRlMGYtYmZkZS1hMmI3MWYyNjM2YmYiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTcyOTY2NTg2MiwiZXhwIjoxNzMyMDg1MDYyfQ.vT7a8TMXry7Wc9vGgZN5aAPzVWbG-xXJlY5kZ8xes8U' \\\r\n--header 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36' \\\r\n--header 'sec-ch-ua-platform: \"macOS\"' \\\r\n--data '{\r\n    \"customerIds\": [\r\n        \"be51952b-5e41-4f35-bf1e-0af1e55876a4\",\r\n        \"3ce2b5dc-fe03-4030-b015-5cbdfa0811ab\"\r\n    ],\r\n    \"teamMemberIds\": [\r\n        \"dc3316dc-b672-47de-be47-b166296e213f\"\r\n    ]\r\n}'"
+			},
+			"response": []
+		}
+	]
+}
